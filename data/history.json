@@ -1,0 +1,17 @@
+[
+ {
+  "date": "2026-11-17",
+  "price": 63639,
+  "score": -10.5,
+  "label": "Neutral / mixed",
+  "social_sentiment": 0.021870236813778244,
+  "news_sentiment": -0.2180548148148148,
+  "social_n": 30,
+  "fear_greed": 12,
+  "funding_ann": 0.05770092803431647,
+  "oi_usd": 5096979515.134988,
+  "ob_imbalance_2": 0.20242080043008862,
+  "taker_imbalance": 0.09060507007570301,
+  "etf_5d": -761.4000000000001
+ }
+]
