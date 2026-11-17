@@ -1,0 +1,84 @@
+# ─────────────────────────────────────────────────────────────
+#  BTC Sentiment Agent — configuration
+#  Every collector is best-effort: if a source fails or is
+#  geo-blocked, the agent logs it and the rest of the run continues.
+# ─────────────────────────────────────────────────────────────
+
+site:
+  title: "Bitcoin Market Sentiment — Daily Agent"
+  output_dir: "site_out"          # GitHub Actions publishes this folder
+  history_days: 730               # how much daily history to keep
+
+http:
+  timeout: 20
+  retries: 3
+  polite_delay_sec: 1.2           # pause between requests to the same forum
+  user_agent: "btc-sentiment-agent/1.0 (personal research dashboard; contact: you@example.com)"
+
+# ── Social / forums ───────────────────────────────────────────
+reddit:
+  enabled: true
+  subreddits: [Bitcoin, BitcoinMarkets, CryptoCurrency, btc, CryptoMarkets]
+  listings: [hot, top_day]        # hot + top-of-the-day
+  posts_per_listing: 75
+  comments_from_top_posts: 4      # pull top comments from N best posts per sub
+  comments_per_post: 40
+  include_daily_discussion: true  # r/Bitcoin & r/BitcoinMarkets daily threads
+
+bitcointalk:
+  enabled: true
+  boards:                         # board id → label
+    "1.0": "Bitcoin Discussion"
+    "57.0": "Speculation"
+    "7.0": "Economics"
+
+stocktwits:
+  enabled: true                   # users self-label posts Bullish/Bearish
+  symbols: [BTC.X]
+
+news:
+  enabled: true
+  max_age_hours: 36
+  feeds:
+    CoinDesk: "https://www.coindesk.com/arc/outboundfeeds/rss/"
+    Cointelegraph: "https://cointelegraph.com/rss/tag/bitcoin"
+    Decrypt: "https://decrypt.co/feed"
+    Bitcoin Magazine: "https://bitcoinmagazine.com/.rss/full/"
+    The Block: "https://www.theblock.co/rss.xml"
+    CryptoSlate: "https://cryptoslate.com/feed/"
+    Google News: "https://news.google.com/rss/search?q=bitcoin+when:1d&hl=en-US&gl=US&ceid=US:en"
+
+# ── Market data ───────────────────────────────────────────────
+orderbook:
+  band_pcts: [0.5, 1, 2, 5]       # depth measured within ±x% of mid
+  wall_bucket_usd: 250            # price bucket width when clustering walls
+  wall_search_pct: 6              # look for walls within ±6% of mid
+  top_walls: 8
+  large_order_btc: 20             # single price level ≥ this = "large order"
+
+flow:
+  large_trade_usd: 500000         # prints ≥ $500k are flagged as whale trades
+
+# ── Signal model (weights are relative; missing inputs are skipped) ──
+signal:
+  weights:
+    trend: 1.5
+    momentum: 1.0
+    mean_reversion: 0.75
+    social_sentiment: 1.0
+    news_sentiment: 0.75
+    fear_greed_contrarian: 1.0
+    funding_contrarian: 1.0
+    long_short_contrarian: 0.5
+    options_put_call: 0.5
+    orderbook_imbalance: 0.75
+    taker_flow: 0.75
+    etf_flows: 1.0
+  neutral_funding_annualized: 0.10   # ~0.01% per 8h is "normal"
+
+# ── Optional AI layer (Claude). Set ANTHROPIC_API_KEY to enable. ──
+llm:
+  enabled: true
+  model: "claude-sonnet-5-5"
+  classify_max_items: 150         # re-score top posts/headlines with the LLM
+  max_tokens_brief: 1400

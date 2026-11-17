@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ cfg.site.title }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+:root{
+  --bg:#0a0d12;--panel:#11151c;--panel2:#161b24;--line:#232b37;--text:#e7eaf0;--muted:#8792a4;--dim:#5b6577;
+  --pos:#35d39a;--neg:#ff5f6d;--warn:#f5b84a;--btc:#f7931a;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;--sans:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--dim)}a:hover{color:var(--btc);border-color:var(--btc)}
+.wrap{max-width:1320px;margin:0 auto;padding:28px 24px 64px}
+header{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.brand{display:flex;align-items:center;gap:12px}
+.coin{width:38px;height:38px;border-radius:50%;background:var(--btc);display:grid;place-items:center;color:#0a0d12;font:700 21px var(--sans)}
+h1{font-size:20px;margin:0;font-weight:600;letter-spacing:-.01em}
+.sub{color:var(--muted);font-size:12.5px;font-family:var(--mono)}
+.banner{background:repeating-linear-gradient(45deg,#3a2a08,#3a2a08 10px,#2e2206 10px,#2e2206 20px);border:1px solid #6b4f12;color:#ffd58a;
+  padding:10px 14px;border-radius:8px;margin-bottom:18px;font-weight:500}
+.grid{display:grid;gap:14px}
+.g-hero{grid-template-columns:1.35fr 1fr 1fr 1fr 1fr}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g-brief{grid-template-columns:1.15fr 1fr}
+@media(max-width:1100px){.g-hero{grid-template-columns:1fr 1fr}.g-hero .score{grid-column:1/-1}.g3,.g-brief{grid-template-columns:1fr}}
+@media(max-width:700px){.g2{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;min-width:0}
+.card h3{margin:0 0 12px;font-size:11.5px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.card h3 small{text-transform:none;letter-spacing:0;font-weight:400;color:var(--dim);margin-left:6px}
+section{margin-top:26px}
+section>h2{font-size:13px;font-weight:600;color:var(--text);margin:0 0 10px;display:flex;gap:10px;align-items:center}
+section>h2::before{content:"";width:3px;height:14px;background:var(--btc);border-radius:2px}
+.big{font:600 30px/1.1 var(--mono);letter-spacing:-.02em}
+.mid{font:600 22px/1.15 var(--mono)}
+.mono{font-family:var(--mono)}
+.pos{color:var(--pos)}.neg{color:var(--neg)}.muted{color:var(--muted)}.warn{color:var(--warn)}
+.kv{display:flex;justify-content:space-between;gap:8px;padding:5px 0;border-bottom:1px dashed #1c232e;font-size:13px}
+.kv:last-child{border:0}.kv span:first-child{color:var(--muted)}.kv span:last-child{font-family:var(--mono)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.chip{font:500 11.5px var(--mono);padding:3px 8px;border-radius:999px;background:var(--panel2);border:1px solid var(--line);color:var(--muted)}
+/* score gauge */
+.score .label{font-size:15px;font-weight:600;margin-top:4px}
+.gauge{position:relative;height:12px;border-radius:6px;margin:16px 0 6px;
+  background:linear-gradient(90deg,#b5303d 0%,#5a2a33 30%,#2a3240 50%,#1f5a45 70%,#2aa877 100%)}
+.gauge i{position:absolute;top:-6px;width:4px;height:24px;background:#fff;border-radius:2px;box-shadow:0 0 0 3px rgba(255,255,255,.15);transform:translateX(-2px)}
+.gauge-scale{display:flex;justify-content:space-between;font:11px var(--mono);color:var(--dim)}
+/* component bars */
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{font-weight:500;color:var(--dim);text-align:left;font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;padding:0 8px 8px 0}
+td{padding:7px 8px 7px 0;border-top:1px solid #1a212b;vertical-align:top}
+td.n,th.n{text-align:right;font-family:var(--mono);white-space:nowrap}
+.dbar{position:relative;height:10px;background:var(--panel2);border-radius:5px;min-width:120px}
+.dbar::after{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--dim)}
+.dbar b{position:absolute;top:0;bottom:0;border-radius:5px}
+.why{color:var(--muted);font-size:12.5px}
+.brief h4{margin:14px 0 6px;font-size:12.5px;color:var(--btc);text-transform:uppercase;letter-spacing:.07em}
+.brief h4:first-child{margin-top:0}
+.brief ul{margin:0;padding-left:18px}.brief li{margin:3px 0}.brief p{margin:4px 0}
+.post{padding:9px 0;border-top:1px solid #1a212b}.post:first-of-type{border:0}
+.post .meta{font:11.5px var(--mono);color:var(--dim);display:flex;gap:10px;flex-wrap:wrap}
+.post .t{margin:2px 0 0}
+.status td{font-size:12.5px}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+.chart-box{position:relative;height:260px}
+.chart-box.sm{height:190px}
+.split{display:flex;height:14px;border-radius:7px;overflow:hidden;margin:8px 0}
+.split b{display:block}
+footer{margin-top:40px;color:var(--dim);font-size:12px;line-height:1.6;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+{% set p = s.prices %}{% set ta = s.technicals %}{% set sig = s.signal %}{% set sent = s.sentiment %}
+{% set ob = s.orderbook or {} %}{% set fl = s.flow or {} %}{% set der = s.derivatives or {} %}
+{% set fg = s.fear_greed or {} %}{% set oc = s.onchain or {} %}{% set etf = s.etf or {} %}
+
+<header>
+  <div class="brand"><div class="coin">₿</div>
+    <div><h1>{{ cfg.site.title }}</h1>
+      <div class="sub">Updated {{ updated }} · refreshes daily · {{ sig.inputs_used }} signal inputs · {{ sent.social.n or 0 }} posts &amp; comments · {{ sent.news.n or 0 }} headlines</div></div>
+  </div>
+  <div class="sub"><a href="data/latest.json">latest.json</a> · <a href="data/history.json">history.json</a></div>
+</header>
+
+{% if s.sample %}<div class="banner">⚠ SAMPLE DATA — this page was generated with synthetic numbers to preview the layout. The live daily run replaces everything with real market data.</div>{% endif %}
+
+<!-- ───────────── HERO ───────────── -->
+<div class="grid g-hero">
+  <div class="card score">
+    <h3>Composite signal <small>−100 bearish · +100 bullish</small></h3>
+    <div class="big {{ sig.score|tone(14.9) }}">{{ '%+.0f'|format(sig.score) }}</div>
+    <div class="label {{ sig.score|tone(14.9) }}">{{ sig.label }}</div>
+    <div class="gauge"><i style="left:{{ (sig.score + 100) / 2 }}%"></i></div>
+    <div class="gauge-scale"><span>-100</span><span>-40</span><span>0</span><span>+40</span><span>+100</span></div>
+    <div class="chips"><span class="chip">confidence: {{ sig.confidence }}</span><span class="chip">{{ sig.agreement_pct }}% of inputs agree</span></div>
+  </div>
+  <div class="card">
+    <h3>BTC / USD</h3>
+    <div class="big">{{ p.spot|usd }}</div>
+    <div class="kv"><span>24h</span><span class="{{ p.change_24h|tone }}">{{ p.change_24h|pct }}</span></div>
+    <div class="kv"><span>7d</span><span class="{{ p.change_7d|tone }}">{{ p.change_7d|pct }}</span></div>
+    <div class="kv"><span>30d</span><span class="{{ p.change_30d|tone }}">{{ p.change_30d|pct }}</span></div>
+    <div class="kv"><span>From ATH</span><span class="{{ p.ath_change_pct|tone }}">{{ p.ath_change_pct|pct }}</span></div>
+  </div>
+  <div class="card">
+    <h3>Fear &amp; Greed</h3>
+    {% set fgv = fg.value %}
+    <div class="big {% if fgv is present %}{{ 'neg' if fgv < 30 else 'pos' if fgv > 70 else 'warn' if fgv > 55 or fgv < 45 else 'muted' }}{% endif %}">{{ fgv if fgv is present else '—' }}</div>
+    <div class="muted">{{ fg.label or 'unavailable' }}</div>
+    <div class="kv" style="margin-top:8px"><span>7-day avg</span><span>{{ fg.avg_7d|num }}</span></div>
+    <div class="kv"><span>StockTwits bulls</span><span>{{ (s.stocktwits_ratio * 100)|round|int ~ '%' if s.stocktwits_ratio is present else '—' }}</span></div>
+  </div>
+  <div class="card">
+    <h3>Leverage</h3>
+    <div class="mid {{ (der.funding_avg_annualized or 0) > 0.2 and 'neg' or (der.funding_avg_annualized or 0) < 0 and 'pos' or '' }}">{{ (der.funding_avg_annualized * 100)|pct if der.funding_avg_annualized is present else '—' }}</div>
+    <div class="muted" style="font-size:12px">avg perp funding, annualized</div>
+    <div class="kv" style="margin-top:8px"><span>Open interest</span><span>{{ der.oi_total_usd|money }}</span></div>
+    <div class="kv"><span>Long/short</span><span>{{ der.long_short_ratio|num(2) }}</span></div>
+    <div class="kv"><span>Put/call OI</span><span>{{ der.put_call_oi|num(2) }}</span></div>
+  </div>
+  <div class="card">
+    <h3>Money flows</h3>
+    <div class="mid {{ etf.sum_5d_musd|tone }}">{{ (etf.sum_5d_musd * 1e6)|money if etf.sum_5d_musd is present else '—' }}</div>
+    <div class="muted" style="font-size:12px">spot-ETF net flow, 5 days</div>
+    <div class="kv" style="margin-top:8px"><span>Taker buy/sell</span><span class="{{ fl.taker_imbalance|tone }}">{{ (fl.taker_imbalance * 100)|pct if fl.taker_imbalance is present else '—' }}</span></div>
+    {% set obi = ((ob.aggregate or {}).get('2') or {}).get('imbalance') %}
+    <div class="kv"><span>Book ±2%</span><span class="{{ obi|tone }}">{{ (obi * 100)|pct if obi is present else '—' }}</span></div>
+    <div class="kv"><span>Dominance</span><span>{{ p.btc_dominance|num(1) }}%</span></div>
+  </div>
+</div>
+
+<!-- ───────────── BRIEF + BREAKDOWN ───────────── -->
+<section>
+<div class="grid g-brief">
+  <div class="card brief">
+    <h3>Daily analyst brief <small>{{ 'written by Claude from today\'s data' if s.brief_source == 'Claude' else 'rules-based summary' }}</small></h3>
+    {{ brief|safe }}
+  </div>
+  <div class="card">
+    <h3>Signal breakdown <small>bars: −1 … +1 · sorted by impact</small></h3>
+    <table>
+      <tr><th>Input</th><th style="width:38%">Reading</th><th class="n">Wt</th></tr>
+      {% for key, c in components %}
+      <tr>
+        <td><div>{{ names.get(key, key) }}</div><div class="why">{{ c.why }}</div></td>
+        <td style="padding-top:12px"><div class="dbar">
+          {% set w = (c.score|abs) * 50 %}
+          {% if c.score >= 0 %}<b style="left:50%;width:{{ w }}%;background:var(--pos)"></b>
+          {% else %}<b style="left:{{ 50 - w }}%;width:{{ w }}%;background:var(--neg)"></b>{% endif %}
+        </div><div class="mono muted" style="font-size:11.5px;margin-top:3px">{{ '%+.2f'|format(c.score) }}</div></td>
+        <td class="n muted">{{ c.weight }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+</section>
+
+<!-- ───────────── CHARTS ───────────── -->
+<section><h2>Price &amp; signal history</h2>
+<div class="grid g2">
+  <div class="card"><h3>Price, 180 days <small>with 50/200-day averages</small></h3><div class="chart-box"><canvas id="cPrice"></canvas></div></div>
+  <div class="card"><h3>Composite score vs price <small>one point per daily run</small></h3><div class="chart-box"><canvas id="cScore"></canvas></div></div>
+</div>
+<div class="grid g3" style="margin-top:14px">
+  <div class="card"><h3>Forum &amp; news mood</h3><div class="chart-box sm"><canvas id="cSent"></canvas></div></div>
+  <div class="card"><h3>Fear &amp; Greed, 120 days</h3><div class="chart-box sm"><canvas id="cFG"></canvas></div></div>
+  <div class="card"><h3>Perp funding (annualized) &amp; open interest</h3><div class="chart-box sm"><canvas id="cFund"></canvas></div></div>
+</div>
+</section>
+
+<!-- ───────────── ORDER BOOK ───────────── -->
+<section><h2>Order books — where the big buy &amp; sell orders sit</h2>
+<div class="grid g3">
+  <div class="card">
+    <h3>Depth near price <small>all venues combined</small></h3>
+    <div class="chart-box sm"><canvas id="cDepth"></canvas></div>
+    <div class="sub" style="margin-top:8px">Venues: {% for k, v in (ob.venue_status or {}).items() %}<span class="{{ 'pos' if v == 'ok' else 'muted' }}">{{ k }}</span>{% if not loop.last %} · {% endif %}{% endfor %}</div>
+  </div>
+  <div class="card">
+    <h3>Biggest bid walls <small>support · ${{ ob.bucket_usd or 250 }} buckets</small></h3>
+    <table><tr><th>Price</th><th class="n">Size</th><th class="n">Dist.</th></tr>
+    {% for w in (ob.bid_walls or [])[:7] %}<tr><td class="mono pos">{{ w.price|usd }}</td><td class="n">{{ w.usd|money }} <span class="muted">· {{ w.btc|num(0) }} ₿</span></td><td class="n muted">{{ w.dist_pct|pct }}</td></tr>{% else %}<tr><td colspan="3" class="muted">unavailable</td></tr>{% endfor %}
+    </table>
+  </div>
+  <div class="card">
+    <h3>Biggest ask walls <small>resistance</small></h3>
+    <table><tr><th>Price</th><th class="n">Size</th><th class="n">Dist.</th></tr>
+    {% for w in (ob.ask_walls or [])[:7] %}<tr><td class="mono neg">{{ w.price|usd }}</td><td class="n">{{ w.usd|money }} <span class="muted">· {{ w.btc|num(0) }} ₿</span></td><td class="n muted">{{ w.dist_pct|pct }}</td></tr>{% else %}<tr><td colspan="3" class="muted">unavailable</td></tr>{% endfor %}
+    </table>
+  </div>
+</div>
+<div class="grid g2" style="margin-top:14px">
+  <div class="card">
+    <h3>Large single orders <small>≥ {{ cfg.orderbook.large_order_btc }} BTC at one price</small></h3>
+    <table><tr><th>Venue</th><th>Side</th><th class="n">Price</th><th class="n">Size</th><th class="n">Dist.</th></tr>
+    {% for o in (ob.large_orders or [])[:10] %}<tr><td>{{ o.exchange }}</td><td class="{{ 'pos' if o.side == 'bid' else 'neg' }}">{{ 'Buy' if o.side == 'bid' else 'Sell' }}</td><td class="n">{{ o.price|usd }}</td><td class="n">{{ o.btc|num(1) }} ₿ <span class="muted">{{ o.usd|money }}</span></td><td class="n muted">{{ o.dist_pct|pct }}</td></tr>{% else %}<tr><td colspan="5" class="muted">None above threshold right now.</td></tr>{% endfor %}
+    </table>
+  </div>
+  <div class="card">
+    <h3>Whale trades &amp; aggressive flow <small>prints ≥ {{ fl.large_trade_threshold_usd|money(0) }}</small></h3>
+    {% set tb, tsell = fl.taker_buy_btc_24h, fl.taker_sell_btc_24h %}
+    {% if tb is present and tsell is present and tb + tsell > 0 %}
+    <div class="kv"><span>Taker buys vs sells <span class="muted">({{ fl.taker_source }})</span></span><span>{{ tb|num }} / {{ tsell|num }} ₿</span></div>
+    <div class="split"><b style="width:{{ tb / (tb + tsell) * 100 }}%;background:var(--pos)"></b><b style="flex:1;background:var(--neg)"></b></div>
+    {% endif %}
+    <div class="kv"><span>Whale buys / sells (sample window)</span><span><span class="pos">{{ fl.large_buy_usd|money }}</span> / <span class="neg">{{ fl.large_sell_usd|money }}</span></span></div>
+    <table style="margin-top:6px"><tr><th>Time</th><th>Venue</th><th>Side</th><th class="n">Size</th></tr>
+    {% for t in (fl.large_trades or [])[:8] %}<tr><td class="mono muted" style="font-size:12px">{{ t.time }}</td><td>{{ t.exchange }}</td><td class="{{ 'pos' if t.side == 'buy' else 'neg' }}">{{ t.side|capitalize }}</td><td class="n">{{ t.btc|num(2) }} ₿ <span class="muted">{{ t.usd|money }}</span></td></tr>{% else %}<tr><td colspan="4" class="muted">No whale prints in the sampled window.</td></tr>{% endfor %}
+    </table>
+  </div>
+</div>
+</section>
+
+<!-- ───────────── DERIVATIVES ───────────── -->
+<section><h2>Derivatives positioning</h2>
+<div class="grid g3">
+  <div class="card"><h3>Funding by venue <small>per 8h · annualized</small></h3>
+    <table>{% for f in der.funding or [] %}<tr><td>{{ f.venue }}</td><td class="n">{{ '%.4f'|format(f.rate_8h * 100) }}%</td><td class="n {{ 'neg' if f.annualized > 0.2 else 'pos' if f.annualized < 0 else '' }}">{{ (f.annualized * 100)|pct }}</td></tr>{% else %}<tr><td class="muted">unavailable</td></tr>{% endfor %}</table>
+  </div>
+  <div class="card"><h3>Open interest by venue</h3>
+    <table>{% for o in der.open_interest or [] %}<tr><td>{{ o.venue }}</td><td class="n">{{ o.btc|num }} ₿</td><td class="n muted">{{ o.usd|money }}</td></tr>{% else %}<tr><td class="muted">unavailable</td></tr>{% endfor %}</table>
+    {% if der.oi_change_24h_pct is present %}<div class="kv" style="margin-top:6px"><span>Binance OI 24h</span><span class="{{ der.oi_change_24h_pct|tone }}">{{ der.oi_change_24h_pct|pct }}</span></div>{% endif %}
+  </div>
+  <div class="card"><h3>Crowd positioning</h3>
+    <div class="kv"><span>Long/short accounts</span><span>{{ der.long_short_ratio|num(2) }}</span></div>
+    <div class="kv"><span>Source</span><span class="muted">{{ der.long_short_source or '—' }}</span></div>
+    <div class="kv"><span>Deribit put/call OI</span><span>{{ der.put_call_oi|num(2) }}</span></div>
+    <div class="kv"><span>30d realized vol</span><span>{{ ta.realized_vol_30d|num(1) }}%</span></div>
+    <div class="kv"><span>RSI(14)</span><span>{{ ta.rsi14|num(0) }}</span></div>
+    <div class="kv"><span>Mayer multiple</span><span>{{ ta.mayer_multiple|num(2) }}</span></div>
+  </div>
+</div>
+</section>
+
+<!-- ───────────── CROWD ───────────── -->
+<section><h2>What the crowd is saying</h2>
+<div class="grid g3">
+  <div class="card"><h3>Mood by channel <small>engagement-weighted · −1 … +1</small></h3>
+    <table><tr><th>Channel</th><th class="n">Items</th><th class="n">Mood</th><th class="n">Bull/Bear</th></tr>
+    {% for ch, a in sent.by_channel.items() if a.n %}<tr><td>{{ ch }}</td><td class="n muted">{{ a.n }}</td><td class="n {{ a.weighted_mean|tone(0.05) }}">{{ '%+.2f'|format(a.weighted_mean) }}</td><td class="n muted">{{ a.bullish_pct|round|int }}/{{ a.bearish_pct|round|int }}%</td></tr>{% endfor %}
+    </table>
+    {% if sent.llm_scored %}<div class="sub" style="margin-top:8px">{{ sent.llm_scored }} items re-scored by Claude; rest by VADER + crypto lexicon.</div>{% endif %}
+  </div>
+  <div class="card"><h3>Hot topics <small>mentions · tone</small></h3>
+    <table>{% for t in sent.topics[:8] %}<tr><td>{{ t.topic }}</td><td class="n muted">{{ t.mentions }}</td><td class="n {{ t.avg_sentiment|tone(0.05) }}">{{ '%+.2f'|format(t.avg_sentiment) }}</td></tr>{% endfor %}</table>
+    <h3 style="margin-top:16px">Trending words</h3>
+    <div class="chips">{% for w, c in sent.trending_terms[:24] %}<span class="chip">{{ w }} <span style="color:var(--dim)">{{ c }}</span></span>{% endfor %}</div>
+  </div>
+  <div class="card"><h3>Latest headlines</h3>
+    {% for h in sent.top_headlines[:9] %}<div class="post"><div class="meta"><span>{{ h.channel }}</span><span class="{{ h.sentiment|tone(0.05) }}">{{ '%+.2f'|format(h.sentiment) }}</span></div><div class="t"><a href="{{ h.url }}" target="_blank" rel="noopener">{{ h.title }}</a></div></div>{% else %}<div class="muted">No headlines collected.</div>{% endfor %}
+  </div>
+</div>
+<div class="grid g2" style="margin-top:14px">
+  <div class="card"><h3 class="pos" style="color:var(--pos)">Most bullish voices</h3>
+    {% for x in sent.top_bullish %}<div class="post"><div class="meta"><span>{{ x.source }} · {{ x.channel }}</span><span>▲ {{ x.score }}</span><span class="pos">{{ '%+.2f'|format(x.sentiment) }}</span></div><div class="t"><a href="{{ x.url }}" target="_blank" rel="noopener">{{ (x.title or x.text)|truncate(220) }}</a></div></div>{% else %}<div class="muted">—</div>{% endfor %}
+  </div>
+  <div class="card"><h3 style="color:var(--neg)">Most bearish voices</h3>
+    {% for x in sent.top_bearish %}<div class="post"><div class="meta"><span>{{ x.source }} · {{ x.channel }}</span><span>▲ {{ x.score }}</span><span class="neg">{{ '%+.2f'|format(x.sentiment) }}</span></div><div class="t"><a href="{{ x.url }}" target="_blank" rel="noopener">{{ (x.title or x.text)|truncate(220) }}</a></div></div>{% else %}<div class="muted">—</div>{% endfor %}
+  </div>
+</div>
+</section>
+
+<!-- ───────────── CONTEXT ───────────── -->
+<section><h2>Context: ETFs, network, macro, attention</h2>
+<div class="grid g3">
+  <div class="card"><h3>US spot-ETF daily net flows <small>$M</small></h3><div class="chart-box sm"><canvas id="cETF"></canvas></div>
+    <div class="kv"><span>Last 20 days</span><span class="{{ etf.sum_20d_musd|tone }}">{{ (etf.sum_20d_musd * 1e6)|money if etf.sum_20d_musd is present else '—' }}</span></div></div>
+  <div class="card"><h3>Network (mempool.space)</h3>
+    <div class="kv"><span>Block height</span><span>{{ oc.block_height|num }}</span></div>
+    <div class="kv"><span>Fees fast / 1h / economy</span><span>{% if oc.fees %}{{ oc.fees.fastestFee }} / {{ oc.fees.hourFee }} / {{ oc.fees.economyFee }} sat/vB{% else %}—{% endif %}</span></div>
+    <div class="kv"><span>Mempool</span><span>{{ oc.mempool_tx|num }} tx · {{ oc.mempool_vsize_mb|num(1) }} MvB</span></div>
+    <div class="kv"><span>Hashrate</span><span>{{ oc.hashrate_eh|num(0) }} EH/s <span class="{{ oc.hashrate_change_30d_pct|tone }}">({{ oc.hashrate_change_30d_pct|pct }} 30d)</span></span></div>
+    <div class="kv"><span>Next difficulty adj.</span><span class="{{ oc.difficulty_change_pct|tone }}">{{ oc.difficulty_change_pct|pct }} · {{ oc.next_retarget or '—' }}</span></div>
+    <div class="chart-box sm" style="height:110px;margin-top:8px"><canvas id="cHash"></canvas></div>
+  </div>
+  <div class="card"><h3>Macro backdrop <small>1d · 5d</small></h3>
+    <table>{% for a in (s.macro or {}).get('assets', []) %}<tr><td>{{ a.name }}</td><td class="n">{{ a.price|num(2) }}</td><td class="n {{ a.change_1d_pct|tone }}">{{ a.change_1d_pct|pct }}</td><td class="n {{ a.change_5d_pct|tone }}">{{ a.change_5d_pct|pct }}</td></tr>{% else %}<tr><td class="muted">unavailable</td></tr>{% endfor %}</table>
+    {% set att = s.attention or {} %}
+    <div class="kv" style="margin-top:8px"><span>Wikipedia "Bitcoin" views, 7d vs 90d</span><span class="{{ ((att.ratio_7d_vs_90d or 1) - 1)|tone(0.1) }}">{{ '%.2f×'|format(att.ratio_7d_vs_90d) if att.ratio_7d_vs_90d else '—' }}</span></div>
+  </div>
+</div>
+</section>
+
+<!-- ───────────── STATUS ───────────── -->
+<section><h2>Data sources this run</h2>
+<div class="card status"><table>
+  <tr><th>Source</th><th>Status</th><th>Detail</th><th class="n">Time</th></tr>
+  {% for k, v in s.status.items() %}<tr><td><span class="dot" style="background:{{ 'var(--pos)' if v.ok else 'var(--neg)' }}"></span>{{ k }}</td><td class="{{ 'pos' if v.ok else 'neg' }}">{{ 'ok' if v.ok else 'failed' }}</td>
+  <td class="muted" style="font-size:12px">{% if v.detail is mapping %}{% for a, b in v.detail.items() %}{{ a }}: {{ b }}{% if not loop.last %} · {% endif %}{% endfor %}{% else %}{{ v.detail or '' }}{% endif %}</td><td class="n muted">{{ v.secs }}s</td></tr>{% endfor %}
+</table></div>
+</section>
+
+<footer>
+Built by an automated agent that scrapes forums (Reddit, BitcoinTalk, StockTwits), news RSS, exchange order books and trades, derivatives venues, mempool.space, alternative.me, Wikipedia, Yahoo Finance and Farside Investors once a day.
+Contrarian inputs (Fear &amp; Greed, funding, long/short) are deliberately inverted: crowded optimism is treated as risk. Order-book walls are a snapshot and can be pulled or spoofed.
+<strong>This is an informational research tool, not financial advice.</strong> Signals describe conditions; they do not predict prices.
+</footer>
+</div>
+
+<script>
+const D = {{ charts_json|safe }};
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const C = {pos: css('--pos'), neg: css('--neg'), btc: css('--btc'), muted: css('--muted'), line: '#1d2530', blue:'#6ea8fe', violet:'#b28dff'};
+Chart.defaults.color = C.muted; Chart.defaults.font.family = css('--mono'); Chart.defaults.font.size = 11;
+Chart.defaults.plugins.legend.labels.boxWidth = 10; Chart.defaults.maintainAspectRatio = false;
+Chart.defaults.elements.point.radius = 0; Chart.defaults.elements.line.borderWidth = 1.8;
+const grid = {color: C.line}, xs = {grid: {display:false}, ticks:{maxTicksLimit:7, maxRotation:0}};
+const short = d => d ? d.slice(5) : d;
+const usdTick = v => '$' + (Math.abs(v) >= 1000 ? (v/1000).toFixed(0) + 'k' : v);
+function mk(id, cfg){ const el = document.getElementById(id); if (el) new Chart(el, cfg); }
+
+if (D.price.length) mk('cPrice', {type:'line', data:{labels:D.price.map(r=>short(r.date)), datasets:[
+  {label:'BTC', data:D.price.map(r=>r.close), borderColor:C.btc, fill:{target:'origin', above:'rgba(247,147,26,.06)'}},
+  {label:'50d', data:D.price.map(r=>r.sma50), borderColor:C.blue, borderWidth:1.2},
+  {label:'200d', data:D.price.map(r=>r.sma200), borderColor:C.violet, borderWidth:1.2, borderDash:[4,3]}]},
+  options:{interaction:{mode:'index', intersect:false}, scales:{x:xs, y:{grid, ticks:{callback:usdTick}}}}});
+
+const H = D.history;
+if (H.length) {
+  mk('cScore', {data:{labels:H.map(r=>short(r.date)), datasets:[
+    {type:'bar', label:'Score', data:H.map(r=>r.score), yAxisID:'y', backgroundColor:H.map(r=>r.score>=0?'rgba(53,211,154,.55)':'rgba(255,95,109,.55)'), borderRadius:2},
+    {type:'line', label:'Price', data:H.map(r=>r.price), yAxisID:'y1', borderColor:C.btc}]},
+    options:{interaction:{mode:'index', intersect:false}, scales:{x:xs, y:{min:-100, max:100, grid}, y1:{position:'right', grid:{display:false}, ticks:{callback:usdTick}}}}});
+  mk('cSent', {type:'line', data:{labels:H.map(r=>short(r.date)), datasets:[
+    {label:'Forums', data:H.map(r=>r.social_sentiment), borderColor:C.pos},
+    {label:'News', data:H.map(r=>r.news_sentiment), borderColor:C.blue}]},
+    options:{interaction:{mode:'index', intersect:false}, scales:{x:xs, y:{grid}}}});
+  mk('cFund', {data:{labels:H.map(r=>short(r.date)), datasets:[
+    {type:'line', label:'Funding %/yr', data:H.map(r=>r.funding_ann==null?null:r.funding_ann*100), borderColor:C.neg, yAxisID:'y'},
+    {type:'bar', label:'OI $B', data:H.map(r=>r.oi_usd==null?null:r.oi_usd/1e9), backgroundColor:'rgba(110,168,254,.25)', yAxisID:'y1'}]},
+    options:{interaction:{mode:'index', intersect:false}, scales:{x:xs, y:{grid}, y1:{position:'right', grid:{display:false}}}}});
+}
+if (D.fg.length) mk('cFG', {type:'line', data:{labels:D.fg.map(r=>short(r.date)), datasets:[
+  {label:'F&G', data:D.fg.map(r=>r.value), borderColor:C.btc, segment:{borderColor:c=>{const v=c.p1.parsed.y; return v>=70?C.pos:v<=30?C.neg:C.btc;}}}]},
+  options:{plugins:{legend:{display:false}}, scales:{x:xs, y:{min:0, max:100, grid}}}});
+const B = D.bands, bk = Object.keys(B).sort((a,b)=>parseFloat(a)-parseFloat(b));
+if (bk.length) mk('cDepth', {type:'bar', data:{labels:bk.map(k=>'±'+k+'%'), datasets:[
+  {label:'Bids $M', data:bk.map(k=>B[k].bid_usd/1e6), backgroundColor:'rgba(53,211,154,.7)', borderRadius:3},
+  {label:'Asks $M', data:bk.map(k=>B[k].ask_usd/1e6), backgroundColor:'rgba(255,95,109,.7)', borderRadius:3}]},
+  options:{scales:{x:{grid:{display:false}}, y:{grid}}}});
+if (D.etf.length) mk('cETF', {type:'bar', data:{labels:D.etf.map(r=>short(r.date)), datasets:[
+  {label:'$M', data:D.etf.map(r=>r.net_musd), backgroundColor:D.etf.map(r=>r.net_musd>=0?'rgba(53,211,154,.7)':'rgba(255,95,109,.7)'), borderRadius:2}]},
+  options:{plugins:{legend:{display:false}}, scales:{x:xs, y:{grid}}}});
+if (D.hashrate.length) mk('cHash', {type:'line', data:{labels:D.hashrate.map(r=>short(r.date)), datasets:[
+  {label:'EH/s', data:D.hashrate.map(r=>r.eh), borderColor:C.violet, borderWidth:1.4}]},
+  options:{plugins:{legend:{display:false}}, scales:{x:{display:false}, y:{grid, ticks:{maxTicksLimit:3}}}}});
+</script>
+</body>
+</html>
