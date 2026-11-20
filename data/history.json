@@ -43,5 +43,20 @@
   "ob_imbalance_2": 0.3949077996350708,
   "taker_imbalance": -0.04311781331022131,
   "etf_5d": -723.9
+ },
+ {
+  "date": "2026-11-20",
+  "price": 58695,
+  "score": -20.6,
+  "label": "Bearish lean",
+  "social_sentiment": 0.006289873649994752,
+  "news_sentiment": -0.3463819444444444,
+  "social_n": 30,
+  "fear_greed": 12,
+  "funding_ann": 0.046191884448767276,
+  "oi_usd": 4230933289.8188105,
+  "ob_imbalance_2": 0.2229328004204518,
+  "taker_imbalance": -0.09338689905374906,
+  "etf_5d": -1120.8
  }
 ]
