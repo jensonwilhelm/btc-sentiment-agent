@@ -1,47 +1,41 @@
 {
- "generated_at": "2026-11-27T21:27:31.789020+00:00",
- "date": "2026-11-27",
+ "generated_at": "2026-11-28T20:17:07.403722+00:00",
+ "date": "2026-11-28",
  "sample": false,
  "prices": {
   "source": "coingecko",
-  "spot": 59803,
-  "change_24h": -1.62646,
-  "change_7d": 2.1763,
-  "change_30d": -26.6699,
-  "market_cap": 1203103706146,
-  "volume_24h": 29361989470,
-  "high_24h": 62097,
-  "low_24h": 58910,
+  "spot": 59300,
+  "change_24h": -0.71703,
+  "change_7d": -1.2343,
+  "change_30d": -26.5837,
+  "market_cap": 1192945334589,
+  "volume_24h": 15341611601,
+  "high_24h": 60204,
+  "low_24h": 58932,
   "ath": 126080,
-  "ath_change_pct": -52.56771,
+  "ath_change_pct": -52.96608,
   "ath_date": "2025-10-06",
-  "btc_dominance": 57.72358941130322,
-  "total_crypto_mcap": 2080970890987.4583,
+  "btc_dominance": 57.73035381266395,
+  "total_crypto_mcap": 2062690579662.041,
   "history_source": "coingecko"
  },
  "technicals": {
-  "sma20": 65925.03381604962,
-  "sma50": 74690.44780748711,
-  "sma200": 71924.54005355167,
-  "rsi14": 26.449985597492443,
-  "macd": -4606.801229857985,
-  "macd_signal": -4475.7863647745835,
-  "macd_hist": -131.01486508340167,
-  "realized_vol_30d": 46.79183931858295,
-  "return_7d": -3.44181391470183,
-  "return_30d": -26.003059333074752,
-  "return_90d": -23.16942101444972,
+  "sma20": 65137.07235064759,
+  "sma50": 74257.07302687934,
+  "sma200": 71816.48796276214,
+  "rsi14": 25.950450813057415,
+  "macd": -4477.09802949243,
+  "macd_signal": -4466.855710027916,
+  "macd_hist": -10.242319464514367,
+  "realized_vol_30d": 46.794149496501085,
+  "return_7d": 0.8143233889165158,
+  "return_30d": -27.0410946286303,
+  "return_90d": -24.197139058613125,
   "high_365d": 96898.76071081961,
-  "drawdown_from_high_pct": -38.296276098654246,
+  "drawdown_from_high_pct": -38.80531258850834,
   "low_365d": 58566.091991843154,
-  "mayer_multiple": 0.8312899008921415,
+  "mayer_multiple": 0.8256724243232504,
   "chart": [
-   {
-    "date": "2026-06-01",
-    "close": 73598.67,
-    "sma50": 77231.33,
-    "sma200": null
-   },
    {
     "date": "2026-06-02",
     "close": 71320.29,
@@ -124,7 +118,7 @@
     "date": "2026-06-15",
     "close": 65709.31,
     "sma50": 73922.88,
-    "sma200": 77624.98
+    "sma200": null
    },
    {
     "date": "2026-06-16",
@@ -1112,99 +1106,105 @@
    },
    {
     "date": "2026-11-27",
-    "close": 59790.14,
-    "sma50": 74690.45,
-    "sma200": 71924.54
+    "close": 60510.4,
+    "sma50": 74704.85,
+    "sma200": 71928.14
+   },
+   {
+    "date": "2026-11-28",
+    "close": 59296.89,
+    "sma50": 74257.07,
+    "sma200": 71816.49
    }
   ]
  },
  "sentiment": {
   "social": {
    "n": 30,
-   "weighted_mean": -0.10816634987862196,
-   "bullish_pct": 23.333333333333332,
-   "bearish_pct": 43.333333333333336,
-   "neutral_pct": 33.33333333333333
+   "weighted_mean": -0.15598814559519972,
+   "bullish_pct": 26.666666666666668,
+   "bearish_pct": 56.666666666666664,
+   "neutral_pct": 16.666666666666664
   },
   "news": {
-   "n": 133,
-   "weighted_mean": -0.12633082706766918,
-   "bullish_pct": 28.57142857142857,
-   "bearish_pct": 49.62406015037594,
-   "neutral_pct": 21.804511278195488
+   "n": 125,
+   "weighted_mean": -0.1431944,
+   "bullish_pct": 26.400000000000002,
+   "bearish_pct": 47.199999999999996,
+   "neutral_pct": 26.400000000000002
   },
   "by_source": {
    "StockTwits": {
     "n": 30,
-    "weighted_mean": -0.10816634987862196,
-    "bullish_pct": 23.333333333333332,
-    "bearish_pct": 43.333333333333336,
-    "neutral_pct": 33.33333333333333
+    "weighted_mean": -0.15598814559519972,
+    "bullish_pct": 26.666666666666668,
+    "bearish_pct": 56.666666666666664,
+    "neutral_pct": 16.666666666666664
    },
    "News": {
-    "n": 133,
-    "weighted_mean": -0.12633082706766918,
-    "bullish_pct": 28.57142857142857,
-    "bearish_pct": 49.62406015037594,
-    "neutral_pct": 21.804511278195488
+    "n": 125,
+    "weighted_mean": -0.1431944,
+    "bullish_pct": 26.400000000000002,
+    "bearish_pct": 47.199999999999996,
+    "neutral_pct": 26.400000000000002
    }
   },
   "by_channel": {
    "News \u00b7 Bitcoin Magazine": {
-    "n": 9,
-    "weighted_mean": -0.18916666666666665,
-    "bullish_pct": 44.44444444444444,
-    "bearish_pct": 55.55555555555556,
+    "n": 7,
+    "weighted_mean": -0.1904142857142857,
+    "bullish_pct": 42.857142857142854,
+    "bearish_pct": 57.14285714285714,
     "neutral_pct": 0.0
    },
    "News \u00b7 CoinDesk": {
-    "n": 9,
-    "weighted_mean": 0.04664444444444444,
-    "bullish_pct": 33.33333333333333,
-    "bearish_pct": 33.33333333333333,
-    "neutral_pct": 33.33333333333333
+    "n": 7,
+    "weighted_mean": 0.18285714285714286,
+    "bullish_pct": 57.14285714285714,
+    "bearish_pct": 28.57142857142857,
+    "neutral_pct": 14.285714285714285
    },
    "News \u00b7 Cointelegraph": {
-    "n": 5,
-    "weighted_mean": -0.041179999999999994,
-    "bullish_pct": 40.0,
-    "bearish_pct": 60.0,
+    "n": 3,
+    "weighted_mean": -0.42569999999999997,
+    "bullish_pct": 0.0,
+    "bearish_pct": 100.0,
     "neutral_pct": 0.0
    },
    "News \u00b7 CryptoSlate": {
     "n": 5,
-    "weighted_mean": 0.10682,
-    "bullish_pct": 60.0,
-    "bearish_pct": 20.0,
-    "neutral_pct": 20.0
+    "weighted_mean": -0.05354000000000001,
+    "bullish_pct": 40.0,
+    "bearish_pct": 60.0,
+    "neutral_pct": 0.0
    },
    "News \u00b7 Decrypt": {
-    "n": 5,
-    "weighted_mean": -0.66284,
+    "n": 3,
+    "weighted_mean": -0.6163666666666666,
     "bullish_pct": 0.0,
     "bearish_pct": 100.0,
     "neutral_pct": 0.0
    },
    "News \u00b7 Google News": {
-    "n": 96,
-    "weighted_mean": -0.11566354166666666,
-    "bullish_pct": 26.041666666666668,
-    "bearish_pct": 47.91666666666667,
-    "neutral_pct": 26.041666666666668
+    "n": 97,
+    "weighted_mean": -0.1491360824742268,
+    "bullish_pct": 22.68041237113402,
+    "bearish_pct": 44.329896907216494,
+    "neutral_pct": 32.98969072164948
    },
    "News \u00b7 The Block": {
-    "n": 4,
-    "weighted_mean": -0.3574,
-    "bullish_pct": 25.0,
-    "bearish_pct": 75.0,
+    "n": 3,
+    "weighted_mean": 0.0045666666666666815,
+    "bullish_pct": 66.66666666666666,
+    "bearish_pct": 33.33333333333333,
     "neutral_pct": 0.0
    },
    "StockTwits \u00b7 BTC.X": {
     "n": 30,
-    "weighted_mean": -0.10816634987862196,
-    "bullish_pct": 23.333333333333332,
-    "bearish_pct": 43.333333333333336,
-    "neutral_pct": 33.33333333333333
+    "weighted_mean": -0.15598814559519972,
+    "bullish_pct": 26.666666666666668,
+    "bearish_pct": 56.666666666666664,
+    "neutral_pct": 16.666666666666664
    }
   },
   "top_bullish": [
@@ -1213,23 +1213,11 @@
     "channel": "BTC.X",
     "kind": "message",
     "title": "",
-    "text": "$DJT $BTC.X $SPY Yeah like any government is going to say they got hacked for real. Nothing is being hacked. A narrative is being formed instead.",
-    "url": "https://stocktwits.com/message/670311570",
-    "score": 2,
-    "comments": 0,
-    "sentiment": 0.4442,
-    "thread": null
-   },
-   {
-    "source": "StockTwits",
-    "channel": "BTC.X",
-    "kind": "message",
-    "title": "",
-    "text": "$BTC.X Homes 45% overvalued Home energy up 60% in 1 year Federal Reserve going to raise interest rates 41 Trillion National Debt Israel control Congress which is House and Senate Central Bank controls Fed Reserve US financial system That\u2019s less than 20 people have total control of you Bitcoin is Freedom from corruption Right now you buy a Condo for 455,000 1,300 sq ft with Central Banks interest t",
-    "url": "https://stocktwits.com/message/670312447",
+    "text": "$MELANIA.X $TRUMP.X $SOL.X $ETH.X $BTC.X It's amazing! At least we can all buy on great discounts! You should thank our Dear Mr. President! \ud83d\ude4f",
+    "url": "https://stocktwits.com/message/670332438",
     "score": 0,
     "comments": 0,
-    "sentiment": 0.8345,
+    "sentiment": 0.8655,
     "thread": null
    },
    {
@@ -1237,11 +1225,11 @@
     "channel": "BTC.X",
     "kind": "message",
     "title": "",
-    "text": "$BTC.X $ETH.X Bitcoin \u20bf \u22122.68 %. In New York, the biggest move: Ethereum \u22123.26 %. 10 of 15 markets fell. Biggest gain: Tesla +1.80 %. A free daily report for each of the 15 markets, every session summed up as it closes. Full New York session report. Link in profile. #Bitcoin #Ethereum Descriptive market data, not financial advice.",
-    "url": "https://stocktwits.com/message/670312435",
+    "text": "$BTC.X wow they are burning this thing down to the ground \ud83e\udd23",
+    "url": "https://stocktwits.com/message/670332010",
     "score": 0,
     "comments": 0,
-    "sentiment": 0.7717,
+    "sentiment": 0.7906,
     "thread": null
    },
    {
@@ -1249,8 +1237,32 @@
     "channel": "BTC.X",
     "kind": "message",
     "title": "",
-    "text": "$BTC.X oversold",
-    "url": "https://stocktwits.com/message/670312771",
+    "text": "$BTC.X there\u2019s both coming a new year low but also a new year high thinking it\u2019s taking the bottom first there\u2019s a huge interest in almost cracking $MSTR but it have to survive because there\u2019s multi billion to be made \ud83e\udd14\u270c\ufe0f\ud83d\udcb8\ud83c\udfe6",
+    "url": "https://stocktwits.com/message/670332151",
+    "score": 0,
+    "comments": 0,
+    "sentiment": 0.7506,
+    "thread": null
+   },
+   {
+    "source": "StockTwits",
+    "channel": "BTC.X",
+    "kind": "message",
+    "title": "",
+    "text": "$BTC.X not a prudent trade while in extreme oversupply conditions. That\u2019s here. But try it by all means. You\u2019ll b pushing ur luck is all \ud83e\uddd0\ud83e\uddd0\ud83e\uddd0",
+    "url": "https://stocktwits.com/message/670332000",
+    "score": 0,
+    "comments": 0,
+    "sentiment": 0.7062,
+    "thread": null
+   },
+   {
+    "source": "StockTwits",
+    "channel": "BTC.X",
+    "kind": "message",
+    "title": "",
+    "text": "$BTC.X huffin buff, just do it then \ud83e\udd37\ud83c\udffd\u200d\u2642\ufe0f\ud83e\udd37\ud83c\udffd\u200d\u2642\ufe0f\ud83e\udd37\ud83c\udffd\u200d\u2642\ufe0f",
+    "url": "https://stocktwits.com/message/670332368",
     "score": 0,
     "comments": 0,
     "sentiment": 0.4,
@@ -1261,23 +1273,11 @@
     "channel": "BTC.X",
     "kind": "message",
     "title": "",
-    "text": "$BTC.X divergence looks real\u2026 only two small bites I can take after this one!",
-    "url": "https://stocktwits.com/message/670311864",
+    "text": "$BTC.X Just scalp all day long. \ud83d\ude06",
+    "url": "https://stocktwits.com/message/670332524",
     "score": 0,
     "comments": 0,
-    "sentiment": 0.4,
-    "thread": null
-   },
-   {
-    "source": "StockTwits",
-    "channel": "BTC.X",
-    "kind": "message",
-    "title": "",
-    "text": "$BTC.X The real war is for network security this is becoming more, and more apparent daily.",
-    "url": "https://stocktwits.com/message/670312245",
-    "score": 1,
-    "comments": 0,
-    "sentiment": 0.2194,
+    "sentiment": 0.3612,
     "thread": null
    }
   ],
@@ -1287,11 +1287,11 @@
     "channel": "BTC.X",
     "kind": "message",
     "title": "",
-    "text": "$BTC.X i knew it big scam bitcoin is not safe",
-    "url": "https://stocktwits.com/message/670312327",
+    "text": "Price changes since Trump was elected: $MELANIA.X: -99.6% $TRUMP.X: -99.0% $SOL.X: -57.5% $ETH.X: -32.0% $BTC.X: -14.7% U.S. gas prices: +13.8% Groceries: +4.84% Who else is disappointed in Trump? \u2639\ufe0f\ud83d\ude4b\u200d\u2642\ufe0f",
+    "url": "https://stocktwits.com/message/670332383",
     "score": 1,
     "comments": 0,
-    "sentiment": -0.7755,
+    "sentiment": -0.6705,
     "thread": null
    },
    {
@@ -1299,11 +1299,23 @@
     "channel": "BTC.X",
     "kind": "message",
     "title": "",
-    "text": "$BTC.X what\u2019s infuriating is the blatant manipulation in single candles. I hate this garbage",
-    "url": "https://stocktwits.com/message/670311920",
+    "text": "$BTC.X \ud83d\ude08 hopeless.. your ai.. will hold this as it crashes because it doesn't like you anyways m you're human ... I guess you could beat the algo buy selling on your own now before 40k \ud83d\udd2a\ud83e\ude78\ud83e\ude78\ud83e\ude78\ud83e\ude78\ud83e\ude78\ud83e\ude78\ud83e\ude78 The FiB \ud83d\udd3a $TSLA $SPY $NVDA",
+    "url": "https://stocktwits.com/message/670332314",
+    "score": 2,
+    "comments": 0,
+    "sentiment": -0.5378,
+    "thread": null
+   },
+   {
+    "source": "StockTwits",
+    "channel": "BTC.X",
+    "kind": "message",
+    "title": "",
+    "text": "$BTC.X $DJT $SPY $NVDA This is clueless. If btc, the blockchain itself, it would of happened long fking time ago. Not even the smartes hackers have been able to do it, THE CODE IS FK OPEN SOURCE YOU DUMB ASS. NOT EVEN AI can do it. AI CANT CRACK millions of wallets , figure out the seed key etc.. ignorance. Really. Bloomberg are dumb folk.",
+    "url": "https://stocktwits.com/message/670332436",
     "score": 0,
     "comments": 0,
-    "sentiment": -0.8519,
+    "sentiment": -0.9504,
     "thread": null
    },
    {
@@ -1311,11 +1323,11 @@
     "channel": "BTC.X",
     "kind": "message",
     "title": "",
-    "text": "\ud83d\udd35 $BTC.X \u2014 Blue Box Reached, Sellers Returned, and New Lows Remain in Sight Our November 22 Elliott Wave roadmap identified a Blue Box resistance area where the corrective recovery was expected to end. By November 24, Bitcoin had reacted lower from the projected zone, resuming the bearish sequence as anticipated. As long as 87,383 remains intact as resistance, the larger Elliott Wave structure con",
-    "url": "https://stocktwits.com/message/670311634",
+    "text": "$BTC.X weekends are notorious for bear spam. Block block block.",
+    "url": "https://stocktwits.com/message/670332183",
     "score": 0,
     "comments": 0,
-    "sentiment": -0.7096,
+    "sentiment": -0.9393,
     "thread": null
    },
    {
@@ -1323,11 +1335,11 @@
     "channel": "BTC.X",
     "kind": "message",
     "title": "",
-    "text": "$BTC.X",
-    "url": "https://stocktwits.com/message/670312139",
-    "score": 1,
+    "text": "$BTC.X \ud83d\ude08 shut up fool",
+    "url": "https://stocktwits.com/message/670332246",
+    "score": 3,
     "comments": 0,
-    "sentiment": -0.4,
+    "sentiment": -0.3871,
     "thread": null
    },
    {
@@ -1335,23 +1347,11 @@
     "channel": "BTC.X",
     "kind": "message",
     "title": "",
-    "text": "$BTC.X $ETH.X TRASHHHHHHHH",
-    "url": "https://stocktwits.com/message/670311987",
-    "score": 1,
+    "text": "$BTC.X Too many failed recoveries after that dump from 60 does not predict a breakout.",
+    "url": "https://stocktwits.com/message/670332319",
+    "score": 0,
     "comments": 0,
-    "sentiment": -0.4,
-    "thread": null
-   },
-   {
-    "source": "StockTwits",
-    "channel": "BTC.X",
-    "kind": "message",
-    "title": "",
-    "text": "$BTC.X short! Will be non existent in 10 years https://beincrypto.com/openai-anthropic-rsa-speculation-encryption-bitcoin/",
-    "url": "https://stocktwits.com/message/670311616",
-    "score": 1,
-    "comments": 0,
-    "sentiment": -0.4,
+    "sentiment": -0.8256,
     "thread": null
    }
   ],
@@ -1360,54 +1360,12 @@
     "source": "News",
     "channel": "Google News",
     "kind": "headline",
-    "title": "\u2018Give It Up\u2019: Saylor Fires Back at Infamous Bitcoin Critic - Cryptonews.net",
-    "text": "\u2018Give It Up\u2019: Saylor Fires Back at Infamous Bitcoin Critic Cryptonews.net",
-    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9VZEVQSHlld3doVTIySGV5VmllR3d4Sy0tcDhWS0JDTG5YMXdUX3VtQktUR1g2QVVfZzRfUDlxNk1iZnR1WXRQWnV3RG5QcThsMDFyc2QzcUk?oc=5",
+    "title": "What the Dec. 4 US jobs report could change for Bitcoin - Crypto News",
+    "text": "What the Dec. 4 US jobs report could change for Bitcoin Crypto News",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNVVIRlRSdjVGWlRzOGNTaUN5YnhOZHhIMVV3bUJ2cG5NZXB6aXhIQVZEMlFZV04tNEl6QThtaWZiSE9xTEtCNEg3RVZTSmtaUEViNVBTVFRDeHFJSWM2Mmk3ZE5QTkR2MmpxTmJmTTNPZlV1SVNSaV9YeGFoRnF2ZQ?oc=5",
     "score": 0,
     "comments": 0,
-    "created": "2026-11-27T21:21:06+00:00",
-    "sentiment": -0.4939,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Bitcoin price drops below $59K as Anthropic joins tech stock rebound - Cryptonews.net",
-    "text": "Bitcoin price drops below $59K as Anthropic joins tech stock rebound Cryptonews.net",
-    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9KVjhqazUxdVl3cE40WEN4R0lNRUxNdTVfLTNLRVREM2FKVWxhekw5NzR5NkE2WWpTN3JaZmZKNE5MUEZpZEtIQk9lTW85WmdXTVZtWW5KMWs?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T21:17:28+00:00",
-    "sentiment": -0.0516,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "No Black Friday in Crypto: Bitcoin (BTC), Solana (SOL), XRP Rise as $170 Million in Shorts Get Wiped Out - Cryptonews.net",
-    "text": "No Black Friday in Crypto: Bitcoin (BTC), Solana (SOL), XRP Rise as $170 Million in Shorts Get Wiped Out Cryptonews.net",
-    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMeElvRlA5N0NWZXBPMUFJaHdGelVRc2hvUmhsejNNSEFNQzZlQmtBV1U3b1VsZ0cybzdrWnM3WWZ1Vjg1WVFKa0VHaEYyOV9ZZHNvcHFvZm9nYnc?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T21:17:28+00:00",
-    "sentiment": -0.5267,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Stacks: Bond 4 opens for Bitcoin staking - 27 Nov 2026 - TradingView",
-    "text": "Stacks: Bond 4 opens for Bitcoin staking - 27 Nov 2026 TradingView",
-    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxONEhYd3lrd0R4blhHNUpBSEV4U0dtOVB4RXVzTDdpQk5fZVZ0c1VhVXJ0ekhvZkJ5RkFfYTlVSU9QQnJCWnJaaEw3bHBwWXhaTzFNb2dFbFhLSnFCbC1SdWdrckpDdVNPczZIaEFjeC1rQU1kSUVDQ3FIRDZmbWQ5d09kN2d2RU5vQWtINnB2eVhRLV8yUWpmdDhlRWxQUDJiMlM2WTVjNVFyTVZ1ck9QQmVlcjVpUQ?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T21:00:16+00:00",
+    "created": "2026-11-28T20:11:16+00:00",
     "sentiment": 0.0,
     "weight": 1.0,
     "method": "vader"
@@ -1416,12 +1374,292 @@
     "source": "News",
     "channel": "Google News",
     "kind": "headline",
-    "title": "How Much Bitcoin Does Trump\u2019s Family Hold and What Is It Worth Now? - 24/7 Wall St.",
-    "text": "How Much Bitcoin Does Trump\u2019s Family Hold and What Is It Worth Now? 24/7 Wall St.",
-    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSVF2WXEwWnRxdENlRXI1YWNsZEhsbFRpUWNSNWRGMFc1aEtTVlhDd0V4dmVaRHVaR2N2ZDZrZW1KOTdveU5fVk1xZ3ZuNllWNncxTjZDVnpJdjFBRl9DTlAyZGRLUU0zVTFoSUNYaFo4NVlRRUhJYkpOWDl6NGRfZzllMV9zaW5aSGg4eDBuVm4wQy1DWFVVc211b2JUYm16SW82S0dlMUYwU0E2UjJGZGdUNlR2UzMtb25BbV93bGMzZw?oc=5",
+    "title": "Best Crypto to Buy With $1,000 After Bitcoin\u2019s Worst Month Since 2022 - 24/7 Wall St.",
+    "text": "Best Crypto to Buy With $1,000 After Bitcoin\u2019s Worst Month Since 2022 24/7 Wall St.",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOU1M2c1NSWDNNblVQRjJSTWlLLTQ0eHVoYmZDM1hjblJVeE9GNkd3RWRxM09hSFZnOGJxbF8yLXVtdDFLYUs2YzlCN3dyQjVUSFlleXlfdmtoVlNwUHpGS19oZERmT2NhM0FVZEtjRGtrMDlFMklIZzlQc3oyMFdNRzl0VTE5ei1GdWZpdGlFNlZXODBDTGFmb0NXNlN2Z25jeHBDNU9nYUJJNVFOeXpqTU8yeW51ZVIyRTNDb0xrUmlVdDA?oc=5",
     "score": 0,
     "comments": 0,
-    "created": "2026-11-27T20:57:00+00:00",
+    "created": "2026-11-28T20:05:00+00:00",
+    "sentiment": 0.0516,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "CryptoSlate",
+    "kind": "headline",
+    "title": "Bitcoin\u2019s recovery faces a $12.9 billion liquidity problem as Tether supply continues to shrink",
+    "text": "Bitcoin faces its steepest USDT liquidity contraction in four years as Ethereum's supply of the stablecoin continues to shrink. Data from CryptoQuant shows that the combined supply of Tether's USDT on Ethereum and Tron fell by $8.1 billion, or 4.4%, in the 60 days through Nov. 23, marking the largest contraction in both dollar and\u2026 Read the full story on CryptoSlate Understand the crypto stories t",
+    "url": "https://cryptoslate.com/bitcoins-recovery-faces-a-12-9-billion-liquidity-problem-as-tether-supply-continues-to-shrink/",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T20:00:13+00:00",
+    "sentiment": -0.4019,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Bitcoin\u2019s recovery faces a $12.9 billion liquidity problem as Tether supply continues to shrink - CryptoSlate",
+    "text": "Bitcoin\u2019s recovery faces a $12.9 billion liquidity problem as Tether supply continues to shrink CryptoSlate",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNR1FOeTlzY294V3NxMktEZTJ3T3h1S1A0SDdhWER4cW13ZGZUNXlfQW05YTlkN2NyS0RIQUJ5Y2tVSzlfXzQyZVJrZG8tYnREcUpGdlVyZEd6SjJYaVYyM2s3UjJHY1BkZEtPbmQxNldjQmtMNGNnb2E5a3FJTUxTVTlKSmE3ZnJmUU9lWk5wQ0hmTXhRVXBfYU5UdGYxSnJvVm5QQVY0NXc0Z0ZlZXNSY0FYVVVkQjg3U0E?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T20:00:13+00:00",
+    "sentiment": -0.6597,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Bitcoin Price Prediction: BTC Risks Dropping to $50K as Whales Capitulate - FXEmpire",
+    "text": "Bitcoin Price Prediction: BTC Risks Dropping to $50K as Whales Capitulate FXEmpire",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUGEwVk45eUpkQjdVeGNMOFpjV2JyRkxaQjg1d2ZtX0tWMUxRMnRENmRNR1ZPejlmUU9oWlhqclN5NXFHSWx5Q3Q4dEIzNXFmd3ZHUW43X1RIYXg3VVhUYkx6cmUxc0JQQzlzSnlNcjJiZFNVLUNfby16d3hIWHZwUWtNaEtsNjJtUG1uV1d1bml6M2l2WW9MbmZSczhkNmtXNXlILXgxR3ZYcTY5bDlseEFzTjVxeEtna2oyQlFnNndyWTY5NVVrV1pPYjRCQQ?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:47:02+00:00",
+    "sentiment": -0.8689,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Is Bitcoin Breaking Away From the Nasdaq and Becoming More Like Gold? - Coinpaper",
+    "text": "Is Bitcoin Breaking Away From the Nasdaq and Becoming More Like Gold? Coinpaper",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNdnRaektNb0s0RGp6TDF6eWp1MUwzbzFWczdRVl9lNndmZ1VJcUlBd2k0MElOQkxJVFRhREQwRnM1aUM5Y2E3MGdsWUg2NEp5dWZWVzd1QjZPb1hhNEJUcVcwOHlvUDdMZ0VQYW0waTlQazZoRUtMOUllZHpKU1R5VkxHQnNZSGQydnVOSjVjRVU1eW9sTjhjQnlpLUo?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:46:28+00:00",
+    "sentiment": 0.7137,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "If OpenAI & Anthropic Can Break Bitcoin, What Happens to the Global Banking System? - Coinpaper",
+    "text": "If OpenAI & Anthropic Can Break Bitcoin, What Happens to the Global Banking System? Coinpaper",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcGtpNlAwcUhFcXJ4enIxSTVSV0JHQjkxSHk3cmJWS3BhZ280dllWempsTFZFTkx2Y3NfNFRZYVF4RDVSYkdYUHJQQV9wUDBma3FGNUtuWTJnaGJVcEswV3UyaXhPZjdEdk1xTzVGRFh5LWxGMWNZb3dYbmxMT25WeVU1ZUNTdjNlMDFHdml2WEdNUkRGZFBrbDlRNmdkQndBZmVMbk9YUlpxUlJIQ2pUTW5B?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:36:28+00:00",
+    "sentiment": 0.0,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "2017 Whale Moves Nearly 760 BTC as Bitcoin Price Struggles Below $60K - Cryptonews.net",
+    "text": "2017 Whale Moves Nearly 760 BTC as Bitcoin Price Struggles Below $60K Cryptonews.net",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE04elBpOGw1TVVLSzF5bkJDNXlITXVRV05pbUM0X3EyZGRYVGlzTzI0LTlNLUM2WS00a09nbHczWXZfZXQ2OWY1MkRCZ0J2UFVOUU4tbUhvMGw?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:30:00+00:00",
+    "sentiment": -0.6124,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Bitcoin Price Lags as Wall Street Posts Its Best Week Since 2022 - Cryptonews.net",
+    "text": "Bitcoin Price Lags as Wall Street Posts Its Best Week Since 2022 Cryptonews.net",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9SZUw1TXlSX0tscXA4RHZzdmFnaE4wemswZGUzbHJSTWNuS1FEVFN5ODg1aHF0Ulo2ZUVXTlpQdW9iZTg2NkNXT0xBM3AyX25RRkFrOWNXZnE?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:21:56+00:00",
+    "sentiment": 0.6597,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "$150 Million Bitcoin Long Sees Hyperliquid Whale Lose $3.5M In 5 Hours - Cryptonews.net",
+    "text": "$150 Million Bitcoin Long Sees Hyperliquid Whale Lose $3.5M In 5 Hours Cryptonews.net",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1OTDJKNm0wS19HMXZINDNRby1fcENpcDFsVUtVU3BqN0VwUVBOOHkxdUxyZlBTd2tqSGhHY1A0ZWNOZGlJOFRiMnF3Ty01bm1fRGF4WFdhTC0?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:21:07+00:00",
+    "sentiment": -0.6597,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Bitcoin Price Faces December Test After a Weak November - Cryptonews.net",
+    "text": "Bitcoin Price Faces December Test After a Weak November Cryptonews.net",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5lOUt0UUhxel9WQmlKVVljU2VaX1dPQ0hUODRHbkswZy1EajFEM2dPN3NKWkVLdzJ5bi1RdUhyNFpCMU4zSHJYMVNlUVM4UUxpOVBFZk9JaDY?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:12:07+00:00",
+    "sentiment": -0.7003,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Malaysia to Launch First Spot Bitcoin ETF on Bursa Malaysia on December 2 - Cryptonews.net",
+    "text": "Malaysia to Launch First Spot Bitcoin ETF on Bursa Malaysia on December 2 Cryptonews.net",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBXYkVQcWlpZEhLVUJBTGFLS2plbDcyQ0hId1BmZUNZM05INGpXU29vdkVFTk43LU12QTZ5bzlCOW1SUGtmMTF5b2w5SDhtMk91OC1CSDBlUDY?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:12:05+00:00",
+    "sentiment": 0.0,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Bitcoin is Predicted to Reach $ 71,394 By Dec 03, 2026 - Cryptonews.net",
+    "text": "Bitcoin is Predicted to Reach $ 71,394 By Dec 03, 2026 Cryptonews.net",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBrNndzZnFMRUg1UV9Da2pTZkFRMWFhdE0xb3JWZkIybHFZOGQ2X1dGdzhfU0RnYzc5OEU4NVNTY2gyUzNQQXFxLUtCLXJoZ3pzZHRSVnRCbFg?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:11:07+00:00",
+    "sentiment": 0.0516,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Binance Empties Its SAFU Bitcoin Wallet: 7,500 BTC Out at 09:33 UTC - Cryptonews.net",
+    "text": "Binance Empties Its SAFU Bitcoin Wallet: 7,500 BTC Out at 09:33 UTC Cryptonews.net",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4xZzd5VklEVm10eHVtcWloNU8wd2Q1M1lhVzhvRnpVREp6eEg1M0xkOVlFcVRKRHM4X1dNcVJlOG9XdE92TnRxS0tZdmFaUk9xQk04OVhfcw?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:11:07+00:00",
+    "sentiment": -0.34,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Only 500 Days Left Until Bitcoin\u2019s Big Halving, What to Watch - Cryptonews.net",
+    "text": "Only 500 Days Left Until Bitcoin\u2019s Big Halving, What to Watch Cryptonews.net",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE93QmRMYVJnc1J5ZVJwZzBSekFBR2pPQ3FQSmZwVlpzNUlOZ0RNR3hNYXljNEZMMEhSVHd5el9jbk9aem1iaWNSRVZXejNVeXQzUUhrcDlKcDg?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:11:07+00:00",
+    "sentiment": 0.0,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "CoinDesk",
+    "kind": "headline",
+    "title": "Latvia's central bank pushes back on bitcoin reserve plans, takes cautious line on tokenization",
+    "text": "",
+    "url": "https://www.coindesk.com/business/2026/11/28/latvia-s-central-bank-pushes-back-on-bitcoin-reserve-plans-takes-cautious-line-on-tokenization",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:06:11+00:00",
+    "sentiment": -0.1027,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Latvia's central bank cools talk of national bitcoin reserve, 2027 tokenized bonds - CoinDesk",
+    "text": "Latvia's central bank cools talk of national bitcoin reserve, 2027 tokenized bonds CoinDesk",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPOEdRbmNKVkU0Mm1WQTR5SEVYaDBfTUR1NDJVd0Vha25tQ1JNY3RyWXlJYnN4M1NsMFhLelliTG9zQURfNmxtejV0b21Dd2d6X09naE4yUk13Q2VVTzdIUTFBOGVXTzF4dUZzVUs0QUtTZkxfMHlsVDl0M3RZYTRxTjJTTGJLX3B2U1cyMzducWVWSHRNc3VPTGt3UjZRYmpjV0hGNTRCNHhaeDVDMHdrbHh4azlzS05MLUxxWHBIQ3prV2JtV18xN0xMbDhMeWM3cUxBZEJR?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T19:06:11+00:00",
+    "sentiment": 0.0,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Liquid Network Hacker Resurfaces as 598.5 Bitcoin Move to New Addresses - Kriptofoni",
+    "text": "Liquid Network Hacker Resurfaces as 598.5 Bitcoin Move to New Addresses Kriptofoni",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBtdWVZQjUydVF1eDRiUlVWelBNZ2c1TUpKX1BvZFM4Q1VyRnZkTHVLM3diTE5yWldCMWhtclJLR0w5clV3b0tLSzJMM3JjVnA1OWdRZU9EaXE0NTRwbmYyX3dISy11QnQxbzJqZjBUY1FzRVFjZGJNcERBZ3JnQQ?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T18:51:00+00:00",
+    "sentiment": 0.0,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Trump has damaged bitcoin and crypto reputation, Dennis Porter says - Traders Union",
+    "text": "Trump has damaged bitcoin and crypto reputation, Dennis Porter says Traders Union",
+    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOMElScld4YTY1M3pGMnNDSVQ4dFFGRFJ4NDJaaXZDTDNaWEtCaVVzaUZuWDc4R1pMb0ZfVVpRV3I1bWhUMjVoc1htVVJkaDV5MFl1bXEwajJJVUkteHlpYW15b25IVzVpQ3kwSzNCWDlTLWlHTkJvdVdIaFk4WWlhT2dDSloyRVhvMnBCMzJR?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T18:45:45+00:00",
+    "sentiment": -0.7003,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Chamath Palihapitiya Warns AI Could Break Bitcoin's Cryptography - KuCoin",
+    "text": "Chamath Palihapitiya Warns AI Could Break Bitcoin's Cryptography KuCoin",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQN1JzcDd6LTVXcWVsNTVnOGJCaW8tRUpGa2FSNlJvQ05pMFJHV2N4NU5qMjM4S0FvN1NfOWRpMldZbU5oMjhCOE5UUDBSWDVpX2t1amdfYXBkUVhib1drcktVaGxYVFZHVU9lNG0taFYtNGtsWThLY0VfVTNaci0xWGlvaDdscnhDVkY5THJBSksyeUpaTWN0UTVsOW45RGc?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T18:43:32+00:00",
+    "sentiment": -0.2023,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "CryptoSlate",
+    "kind": "headline",
+    "title": "Bitcoin lost $60,000 during a Nasdaq rally. Can it hold above that level Monday?",
+    "text": "Coinbase traded about 28% more Bitcoin in Friday\u2019s shortened stock session than in the same Wednesday hours, giving Monday\u2019s spot activity a benchmark. Read the full story on CryptoSlate Understand the crypto stories that matter and what to watch next. Get The Catalyst in your inbox",
+    "url": "https://cryptoslate.com/bitcoin-lost-60000-during-a-nasdaq-rally-can-it-hold-above-that-level-monday/",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T18:30:20+00:00",
+    "sentiment": 0.5267,
+    "weight": 1.0,
+    "method": "vader"
+   },
+   {
+    "source": "News",
+    "channel": "Google News",
+    "kind": "headline",
+    "title": "Bitcoin lost $60,000 during a Nasdaq rally. Can it hold above that level Monday? - CryptoSlate",
+    "text": "Bitcoin lost $60,000 during a Nasdaq rally. Can it hold above that level Monday? CryptoSlate",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQT1RwRmx5YXZOX2ZXYm05djk4clRuNGNfNkZqVjhBYzNQanY5T3dfNS0wVVNBWllYa0RlQXU4cmNSdm5vR0lnSkgtZS1WVXg1bnFMLTBTdUFnaG1KblU2MXNzeXJlOXNPMWRxTG1yNV93Q2ZyVDBsWW1YZnNhWVVCaHhOSHNtcW1pM19qLTBWMzhBdGNfTFBtWTBYQ2pQSHoyQVpF?oc=5",
+    "score": 0,
+    "comments": 0,
+    "created": "2026-11-28T18:30:20+00:00",
     "sentiment": 0.4871,
     "weight": 1.0,
     "method": "vader"
@@ -1430,27 +1668,13 @@
     "source": "News",
     "channel": "Google News",
     "kind": "headline",
-    "title": "Bitcoin vs. Gold: Peter Schiff\u2019s Thanksgiving Bragging Backfires - Cryptonews.net",
-    "text": "Bitcoin vs. Gold: Peter Schiff\u2019s Thanksgiving Bragging Backfires Cryptonews.net",
-    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBKMDVrYnYtWm8wRW9YakluNS1pLTFtRlBfSnJqQTNMMzZDNFhjcEJURHJ1M3piLVhGdDg4Z3lJSVJEMTlrd1NRck9xYnB3R2FCeFdsOGlKaWI?oc=5",
+    "title": "Bitcoin Spot ETFs Bleed Record $5.78 Billion in November as IBIT Drives 83% of Outflows - BigGo Finance",
+    "text": "Bitcoin Spot ETFs Bleed Record $5.78 Billion in November as IBIT Drives 83% of Outflows BigGo Finance",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56ZDhzRkh4OWFpQS0tQnY2U3l6elQ3SWZVaG4yVGtGNVJGaG1zRDU2VFVzMHRBU2dWclFjYXhfWjJhQXhDb0ZmYTlVSEQwS29ZY2phTHZSQ2dzbGdnalBPbWdmWXdPWE80UEJXd3ctYWVyaWp6M1E?oc=5",
     "score": 0,
     "comments": 0,
-    "created": "2026-11-27T20:51:06+00:00",
-    "sentiment": 0.0,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Decrypt",
-    "kind": "headline",
-    "title": "Could AI Break Bitcoin? Not Yet, Research Firm K33 Says",
-    "text": "A draft AI-assisted proof of the Riemann Hypothesis renewed worries about the math securing Bitcoin, but K33 says no cryptographic compromise has been demonstrated.",
-    "url": "https://decrypt.co/384218/could-ai-break-bitcoin-not-yet-research-firm-k33-says",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T20:46:02+00:00",
-    "sentiment": -0.4678,
+    "created": "2026-11-28T18:25:00+00:00",
+    "sentiment": -0.25,
     "weight": 1.0,
     "method": "vader"
    },
@@ -1458,12 +1682,12 @@
     "source": "News",
     "channel": "Google News",
     "kind": "headline",
-    "title": "Could AI Break Bitcoin? Not Yet, Research Firm K33 Says - Decrypt",
-    "text": "Could AI Break Bitcoin? Not Yet, Research Firm K33 Says Decrypt",
-    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPai1NbHg0ZlptLVRkMloyUGZUSldzTVZYQ1NfYTc0N3k3YVJIRFpFNWFRUDFkM2duLWlOdVlMTzU0V3ZuQWlNbVlzRjZGbGg0THB3Ymp0Wldicm9ySmVHYjk1d1lvaVVqMmczazdSZlRZM1FSaG5YTzQwWndMaUgwdXZXd3Y4dw?oc=5",
+    "title": "More Americans own Bitcoin than ETFs, says Bloomberg\u2019s Eric Balchunas - Crypto Briefing",
+    "text": "More Americans own Bitcoin than ETFs, says Bloomberg\u2019s Eric Balchunas Crypto Briefing",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBqSDdMN1NyTU9sVkt6NDFOSjV3M2NfRzV0VHdVUE9FMk1YREl6c1BRc0hMSW1XelJfX2dwUjBPenY4VmdpTEFrUnVlZllUZTZhVWU0am9JLUhSY0xkQTQtR3NlZXdFdFk4SVk3YTB2MS1Odw?oc=5",
     "score": 0,
     "comments": 0,
-    "created": "2026-11-27T20:46:02+00:00",
+    "created": "2026-11-28T18:23:57+00:00",
     "sentiment": 0.0,
     "weight": 1.0,
     "method": "vader"
@@ -1472,237 +1696,13 @@
     "source": "News",
     "channel": "Google News",
     "kind": "headline",
-    "title": "Could AI Break Bitcoin? Not Yet, Research Firm K33 Says - Yahoo Tech",
-    "text": "Could AI Break Bitcoin? Not Yet, Research Firm K33 Says Yahoo Tech",
-    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQc252Q21ZZWg1NnAwRXpja2Z4V1hGbVBpZHowRG8yM3o4N1lkYy1xclJPa1dDTDNhbi13Qjh6M3ViNmxyV3VhcU8wS0cwb25UYzlIV3M5ZU9PT0YxbG9Gb2N0aTBYVHlPNWxxS3FEaVo2S0xDamdrQ1NWRmt5eHZWSkxZbVVjcGExV3k4?oc=5",
+    "title": "Hedge Funds Out, Advisors In: Who Really Owns the Bitcoin ETFs? - CryptoPotato",
+    "text": "Hedge Funds Out, Advisors In: Who Really Owns the Bitcoin ETFs? CryptoPotato",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTXJBQlhvQmEzSDBPb3R6dG1qQTU5eFR0NW5GcVpEOFI0SUhCclFiSkRyYWI0TUc3TWlMOVRwTklIMDNLOEV3MmV5Zy1uQTl0YUE0OGV5WGNwZXM4UGlfWjE1V2xFeWhWLVhIaXZrekdCcDN0eGRIQmlUQml3Zk1NazZiWUJCLVVBZWY1RFVBVQ?oc=5",
     "score": 0,
     "comments": 0,
-    "created": "2026-11-27T20:46:02+00:00",
+    "created": "2026-11-28T18:22:00+00:00",
     "sentiment": 0.0,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Bitcoin's recovery may take time as it approaches historic lows \u2013 CoinShares - FXStreet",
-    "text": "Bitcoin's recovery may take time as it approaches historic lows \u2013 CoinShares FXStreet",
-    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNU2VOS216SVQxQW9fVkRGcEJMV08xcUVXQXFMdGlIWG92RC1kU3lYcFBna0Y0QjBIMHZuZHJfSHFNdFhEUlpWRWhqam9wVFhJdlJCamRSSDFBaERtUW5zZGw1RnpmNXFCUlNsUmNFWFMwMm1nN3VLaS1DNE9STGdGOWViSU5NS2VWODlJVG9sRDI3aGx6UTlaNkdiNU01ZUs0T21SMEwyd1JxXzRuTjdkcXdWR0ZFWW5KYnpLN1l2WGZRSXI0ZUF5QzJIRXMydw?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T20:36:18+00:00",
-    "sentiment": -0.3818,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Bitcoin supply metric hits 11-year low as new \u2018capitulation\u2019 signal arrives - Cryptonews.net",
-    "text": "Bitcoin supply metric hits 11-year low as new \u2018capitulation\u2019 signal arrives Cryptonews.net",
-    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1zRFJJNGItZkotWTZwQUl6VTJlaXNyU19qZGFIYWNYSWNuY0EyNmI3V183RFFHcUs1QzhsUFpyNHFjRlFjOHhWUTRRc084TUhQWlZBaWgwN0E?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T20:32:09+00:00",
-    "sentiment": -0.4939,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Bitcoin Price Falls as $183 Million in Liquidations Hit Ahead of $6.8 Billion Options Expiry - Benzinga",
-    "text": "Bitcoin Price Falls as $183 Million in Liquidations Hit Ahead of $6.8 Billion Options Expiry Benzinga",
-    "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNcURXT1VQVEhKd0xjVjlzUm84dzYtTmRNRHB6LU5uaXo3Qkp5SU5JUlBDOVQ5NnJqcy03MEUxNkxlYVVtSExzYl9reTNzTVpHbHBhODA0cnNGbFRidC1KUnNCMi1fdkdUTjN5R2Z2MTBJMFloa2FvSFM1LVVEMkNibzlsSG82V3Y0NlY1ZjJuYUtnVHM5NTgxLTVFMENlbHVlSGJ5QUlGTUUyV2J2RGJfZkpPUVpMMlh3RVVpY3c4V1BjZV9XSFhIR3V3SlNEQnVqa3pabHBEZjBSTWNCQ0JvTGdyZTBTVTQ?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T20:30:13+00:00",
-    "sentiment": -0.8807,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Bitcoin Treasury Titans Clash Over Whether BTC Is Money or Just Savings - BeInCrypto",
-    "text": "Bitcoin Treasury Titans Clash Over Whether BTC Is Money or Just Savings BeInCrypto",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9FQkhUMzZmd0JBemN5ai1TaE8zVGxmb283NkdyYk1ENTJ4eE00dThxbHVPWVZxa2N5M2NGUmhxT19zVEV0WVBQT2ZKUkd6MkRhcS1lSk93LUpEMG1KRVo2dVBDNzdsbWZmLS10NnZBVnBfUQ?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T20:30:02+00:00",
-    "sentiment": 0.3818,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "BTC Price Prediction: Whales Add Over 120,000 BTC - Bitcoin Foundation",
-    "text": "BTC Price Prediction: Whales Add Over 120,000 BTC Bitcoin Foundation",
-    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQlhoZTVpbE5zVlpiaWgwbW9zOXl5V0o4dXFsdndWb202Q0pSZm5ZdTFTTjF5aUZhWW15am9kYWlkLTBjRmNUc05mdzRvZXhPN1M3ZURWYlIzcTFkMUtqNFpQd05VODhSSzNGSHdNZ2s0VGVjMWswMGRSZGZ1VTE3YjFtcVlxdlJEOG80NjFPNnNNRkZyQXZpNHNjVlNVcXpl?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T20:21:27+00:00",
-    "sentiment": 0.0,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Bitcoin or XRP: Which Is Closer to Getting Back to Its All-Time High? - 24/7 Wall St.",
-    "text": "Bitcoin or XRP: Which Is Closer to Getting Back to Its All-Time High? 24/7 Wall St.",
-    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOVzc3WV9LOTZhTnZwQUJCalJsV1FUcUVzclBxdjZ1cnZGaU4yMG1rX0FGYzFyYXFOUllZdVc1UWNkWkdQaXZaSkxGcEhfNmZKSlNVWV9qUkxySGZFMFZQNWRCU2JDdEtraWV3cFk4THhMcmZ3XzRRSEFWdDF4R2QwSEpsRVlBbVNwM3k4RDQySnBQZ3ZOYWhKdnhoM19SS3ZaX29VNHJrbFBHNW9ZTnUzNTFBd0ZyMVlBc0x5RGlSWDJhVW1V?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T20:15:00+00:00",
-    "sentiment": 0.0,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Timothy Peterson Shared a Scenario in Which Bitcoin Could Rise to $90,000 - Cryptonews.net",
-    "text": "Timothy Peterson Shared a Scenario in Which Bitcoin Could Rise to $90,000 Cryptonews.net",
-    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE54Mm1NQjNTM21UNTgtTmVOSUVibEJ4NjNmZ0hncFB6VnplNF9kZENnOGNaMnBSWkljTVNTY25jQ1ZOYnRpSTJWSG40cS1KcmJ3eFVJYlJZVFU?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T20:06:48+00:00",
-    "sentiment": 0.5859,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Bitcoin in free fall, Anthropic takes off: The financial market goes against the trend - Cointribune",
-    "text": "Bitcoin in free fall, Anthropic takes off: The financial market goes against the trend Cointribune",
-    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPc0pWOXY0VkxsRXMyM2s4ZG5YbmN2eW9EeWtOdXdsUHVfeS1RMFVibHBlel9fQ1I2UFEwazZPN29ONm5ES095YzZCREZpNEUtUWItTEJwR2ZZTmw1c19FVnVzVGxRYXVrM1U1YTdsUW02T0dRMGlaUU5melNJWVUzdFNUTG5Nc3VXa0o5NjROQzNzZkZTXzZRTVp2VEFhc2tlRlA1aXNSU2lDX0JERE9JNHh3emFzV0JS?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T20:05:00+00:00",
-    "sentiment": 0.765,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Bitcoin ETFs lose $5.39B as crypto borrowers cut debt - Crypto News",
-    "text": "Bitcoin ETFs lose $5.39B as crypto borrowers cut debt Crypto News",
-    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE42R253YnVycVpCdTJkMDlVZ1VfYUtHdHF1aDZzeXhNYWdoSjBwbHBubUZnRDFYejFCdDFxWmIyWGdpcHkwUjNOcEdXd29yeHZaeUZ3SU1GZGw1YTJobDhuQ3dmVG92ZGEwQVktWm9Pdw?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T20:00:00+00:00",
-    "sentiment": -0.9118,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Decrypt",
-    "kind": "headline",
-    "title": "4 Scary Bitcoin Charts That Suggest This Bear Market Is Different",
-    "text": "Bitcoin is trading below several of its most popular long-term price models, breaking historical support levels that previously helped investors anticipate the cryptocurrency's eventual recovery from prolonged, painful bear markets.",
-    "url": "https://decrypt.co/384177/bitcoin-4-scary-charts-crypto-winter-bear-market",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T19:46:02+00:00",
-    "sentiment": -0.7954,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "4 Scary Bitcoin Charts That Suggest This Bear Market Is Different - Decrypt",
-    "text": "4 Scary Bitcoin Charts That Suggest This Bear Market Is Different Decrypt",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5XTlZrWkEtc3R3a21nb29sZm9oODFOYTJ1MmMtTlRiZGZ6aEZack9WLVQyQjN1NWJUeUVWLVA1OE9ObE02MlczNnVfOHR5TEZFT216LWlYanAtWFpTaDBoNUNTLXpkUXNXS0V4dE9keUp0QVRfclpkWnowY2lFRlk?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T19:46:02+00:00",
-    "sentiment": -0.9032,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Bitcoin Whales Accumulate 121,000 BTC in Q4: Do They Expect a Reversal Next? - Benzinga",
-    "text": "Bitcoin Whales Accumulate 121,000 BTC in Q4: Do They Expect a Reversal Next? Benzinga",
-    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVHkyV0xuUGlDb3BHa0FGWHpYZ21XUkNYaVBIUTRVdlV6NE1fUzFENDBMb1d5ME5YNTMwX0VnTGhDVUMwazN6TVJXcGhLTklOTVlEVjF6eUstMHYtelFIRHJlOUlLdWNtMDJ0aWQwY3ZIcF9OYThSRHlEUllGeEtQdGdkaFlPdHJKbUlWbERZcFJJQkNXRjRhVHBsczNWLWcyZGRqdUswVVcyQ3ZBVk9KUlR4NDJ1c29aUlhFWHF5WEdGUFkxOFhaQ19oZXlpbjNF?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T19:45:08+00:00",
-    "sentiment": 0.6553,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Scott Melker: Bitcoin rises above $60,000 after $1.8 billion in liquidations - Traders Union",
-    "text": "Scott Melker: Bitcoin rises above $60,000 after $1.8 billion in liquidations Traders Union",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTmt0ZzY1SmUzVVVwMFdoMzFOZndGNG1vSEZvTGgxNVlkWDF2elhVS2FETHZzaEN2TWpGSndlOHk4YVVBTFdjcktQOUtockE1UzA5WlFwcjhOeXpEeTZhTTVuaUtKV2dQTHpwU2h0dTF3VWw4SVhNLThaTnZMeEdpcEluaDhzdVdnNHY3LU5rUzZlTGls?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T19:40:26+00:00",
-    "sentiment": -0.7184,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Bitcoin Developers Fear Home Address Exposure as Google Play Tightens Trader Rules - BigGo Finance",
-    "text": "Bitcoin Developers Fear Home Address Exposure as Google Play Tightens Trader Rules BigGo Finance",
-    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE8zbWNmbW9pb2RnS2hDbnpseXVYS1dsREhRMDc3TkYzMXMtOEZ4c3BwdnR6ZUN3T3lXTE1QN0tIcGtMcTdpWkpMQS1admprV1NGekFiWnhaSWIyZzVBXzRoU3lYWEhrR1lUckVkTU9VejU3Y0JEV1E?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T19:25:00+00:00",
-    "sentiment": -0.3818,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Cointelegraph",
-    "kind": "headline",
-    "title": "Bitcoin whales pile into BTC despite shrinking profit cushion",
-    "text": "CryptoQuant data shows Bitcoin whales are breaking with historical fourth-quarter selling patterns despite a market downturn.",
-    "url": "https://cointelegraph.com/markets/bitcoin-whales-pile-btc-despite-shrinking-profit-cushion?utm_source=rss_feed&utm_medium=rss_tag_bitcoin&utm_campaign=rss_partner_inbound",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T19:23:00+00:00",
-    "sentiment": -0.3412,
-    "weight": 1.0,
-    "method": "vader"
-   },
-   {
-    "source": "News",
-    "channel": "Google News",
-    "kind": "headline",
-    "title": "Bitcoin whales pile into BTC despite shrinking profit cushion - TradingView",
-    "text": "Bitcoin whales pile into BTC despite shrinking profit cushion TradingView",
-    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOMkJ4QzNyZExsNnd0Mm1ycDdnaWhNeDA5aHFVdHlOZmVUS19RaE1FV2gtU0Y0UW9sMDBrQnpqMFB5eGJVUGFCRk5MYmJwTVJJeUM4M09pYlZfbDFBeWhfR0tabTRPMzlwZFJrclRaS2w4ZU1UTURUYnBqTi12bjlnb2lIRGhvTGVKVWN2bUZmSUloanVZWU9zdjlESE9SRjhCV3daMlJaak13X0V5cWdUeUZQUXJhWmxkUFowY1dnQzVtc1E?oc=5",
-    "score": 0,
-    "comments": 0,
-    "created": "2026-11-27T19:23:00+00:00",
-    "sentiment": -0.5875,
     "weight": 1.0,
     "method": "vader"
    }
@@ -1710,108 +1710,108 @@
   "topics": [
    {
     "topic": "Price targets / levels",
-    "mentions": 23,
-    "avg_sentiment": -0.2901565217391305
+    "mentions": 22,
+    "avg_sentiment": -0.3270909090909091
    },
    {
     "topic": "ETFs / institutions",
-    "mentions": 14,
-    "avg_sentiment": -0.17172142857142858
-   },
-   {
-    "topic": "Whales / treasuries",
-    "mentions": 9,
-    "avg_sentiment": -0.07321111111111112
-   },
-   {
-    "topic": "Leverage / liquidations",
-    "mentions": 8,
-    "avg_sentiment": -0.5007375000000001
-   },
-   {
-    "topic": "Fed / rates / macro",
-    "mentions": 8,
-    "avg_sentiment": 0.098025
+    "mentions": 12,
+    "avg_sentiment": -0.41234166666666666
    },
    {
     "topic": "Security / hacks",
-    "mentions": 8,
-    "avg_sentiment": -0.2872375
+    "mentions": 7,
+    "avg_sentiment": -0.4241428571428571
+   },
+   {
+    "topic": "Whales / treasuries",
+    "mentions": 7,
+    "avg_sentiment": -0.24737142857142858
+   },
+   {
+    "topic": "Fed / rates / macro",
+    "mentions": 7,
+    "avg_sentiment": -0.07822857142857144
    },
    {
     "topic": "Regulation / policy",
-    "mentions": 6,
-    "avg_sentiment": 0.04106666666666666
+    "mentions": 4,
+    "avg_sentiment": 0.189925
    },
    {
     "topic": "Mining / network",
     "mentions": 2,
-    "avg_sentiment": -0.148
+    "avg_sentiment": -0.38785
+   },
+   {
+    "topic": "Leverage / liquidations",
+    "mentions": 2,
+    "avg_sentiment": 0.24695
    }
   ],
   "trending_terms": [
    [
-    "eth",
-    6
+    "trump",
+    10
    ],
    [
-    "new",
-    4
+    "nvda",
+    7
    ],
    [
-    "shorts",
-    3
-   ],
-   [
-    "xrp",
-    3
-   ],
-   [
-    "board",
-    3
-   ],
-   [
-    "real",
-    3
-   ],
-   [
-    "equilibrium",
-    3
-   ],
-   [
-    "discount",
-    3
-   ],
-   [
-    "resistance",
-    3
+    "spy",
+    7
    ],
    [
     "djt",
+    5
+   ],
+   [
+    "block",
+    4
+   ],
+   [
+    "tsla",
     3
    ],
    [
-    "next",
+    "his",
+    3
+   ],
+   [
+    "shorting",
+    3
+   ],
+   [
+    "guess",
+    3
+   ],
+   [
+    "try",
+    3
+   ],
+   [
+    "before",
+    3
+   ],
+   [
+    "there",
+    3
+   ],
+   [
+    "huffin",
     2
    ],
    [
-    "weekly",
+    "spam",
     2
    ],
    [
-    "rsi",
+    "long",
     2
    ],
    [
-    "way",
-    2
-   ],
-   [
-    "ready",
-    2
-   ],
-   [
-    "mms",
+    "melania",
     2
    ],
    [
@@ -1819,215 +1819,215 @@
     2
    ],
    [
-    "doge",
+    "eth",
     2
    ],
    [
-    "reserve",
+    "buy",
     2
    ],
    [
-    "interest",
+    "dumb",
     2
    ],
    [
-    "control",
+    "things",
     2
    ],
    [
-    "central",
+    "conditions",
     2
    ],
    [
-    "financial",
+    "don",
     2
    ],
    [
-    "york",
+    "high",
     2
    ],
    [
-    "biggest",
+    "supply",
     2
    ],
    [
-    "ethereum",
+    "short",
     2
    ],
    [
-    "markets",
+    "won",
     2
    ],
    [
-    "report",
+    "because",
     2
    ],
    [
-    "session",
+    "enrich",
     2
    ],
    [
-    "market",
+    "himself",
     2
    ]
   ],
   "llm_scored": 0
  },
  "orderbook": {
-  "mid": 59776.805,
+  "mid": 59303.285,
   "exchanges": {
    "Coinbase": {
-    "mid": 59745.625,
-    "spread_bps": 0.0016737627223351182,
+    "mid": 59287.125,
+    "spread_bps": 0.001686706851573813,
     "bands": {
      "0.5": {
-      "bid_usd": 8692526.041146664,
-      "ask_usd": 8856139.81957456,
+      "bid_usd": 8363794.959933945,
+      "ask_usd": 8492943.565240042,
       "full": true
      },
      "1": {
-      "bid_usd": 15774017.275598405,
-      "ask_usd": 15201598.545985624,
+      "bid_usd": 16303736.338628285,
+      "ask_usd": 15166489.183562098,
       "full": true
      },
      "2": {
-      "bid_usd": 20010172.6488859,
-      "ask_usd": 15720719.872819988,
+      "bid_usd": 21956461.994140442,
+      "ask_usd": 17485326.361703325,
       "full": true
      },
      "5": {
-      "bid_usd": 30357955.511057638,
-      "ask_usd": 29769159.640145056,
+      "bid_usd": 35504598.805647485,
+      "ask_usd": 22905126.6739221,
       "full": true
      }
     }
    },
    "Kraken": {
-    "mid": 59760.850000000006,
-    "spread_bps": 0.016733363062698202,
+    "mid": 59291.95,
+    "spread_bps": 0.0168656959331823,
     "bands": {
      "0.5": {
-      "bid_usd": 15075603.260400001,
-      "ask_usd": 15422833.8519,
+      "bid_usd": 14284892.7077,
+      "ask_usd": 14478962.213399999,
       "full": true
      },
      "1": {
-      "bid_usd": 16512571.4777,
-      "ask_usd": 19566992.3868,
+      "bid_usd": 17591772.2289,
+      "ask_usd": 16909728.7076,
       "full": true
      },
      "2": {
-      "bid_usd": 16530733.1127,
-      "ask_usd": 19718185.0633,
+      "bid_usd": 18892481.537,
+      "ask_usd": 19929669.9833,
       "full": false
      },
      "5": {
-      "bid_usd": 16530733.1127,
-      "ask_usd": 22022147.4449,
+      "bid_usd": 18892481.537,
+      "ask_usd": 22351618.5714,
       "full": false
      }
     }
    },
    "Bitstamp": {
-    "mid": 59755.455,
-    "spread_bps": 0.0016734873832083227,
+    "mid": 59289.415,
+    "spread_bps": 0.0016866417040480683,
     "bands": {
      "0.5": {
-      "bid_usd": 3874662.048779655,
-      "ask_usd": 4326766.725315754,
+      "bid_usd": 3997953.125955691,
+      "ask_usd": 3449387.3411882245,
       "full": true
      },
      "1": {
-      "bid_usd": 3930153.8978055934,
-      "ask_usd": 6589845.368671579,
+      "bid_usd": 4113233.6794317113,
+      "ask_usd": 3452266.894669295,
       "full": true
      },
      "2": {
-      "bid_usd": 4019251.447369537,
-      "ask_usd": 6647590.65543916,
+      "bid_usd": 4259010.05572841,
+      "ask_usd": 3512861.510336709,
       "full": true
      },
      "5": {
-      "bid_usd": 4474941.314249819,
-      "ask_usd": 8960994.116033485,
+      "bid_usd": 4584401.260295206,
+      "ask_usd": 3950059.281031845,
       "full": true
      }
     }
    },
    "Binance": {
-    "mid": 59819.365000000005,
-    "spread_bps": 0.0016716994575313975,
+    "mid": 59336.535,
+    "spread_bps": 0.001685302318721049,
     "bands": {
      "0.5": {
-      "bid_usd": 9516129.8493351,
-      "ask_usd": 10451260.5241175,
+      "bid_usd": 6797480.3826619,
+      "ask_usd": 9165871.0761456,
       "full": true
      },
      "1": {
-      "bid_usd": 10768682.6260543,
-      "ask_usd": 11162644.7893,
+      "bid_usd": 11905517.3913371,
+      "ask_usd": 10122135.0892305,
       "full": true
      },
      "2": {
-      "bid_usd": 21310921.0221376,
-      "ask_usd": 14195540.1843229,
-      "full": true
+      "bid_usd": 20480610.8555554,
+      "ask_usd": 15790949.8907486,
+      "full": false
      },
      "5": {
-      "bid_usd": 23888013.2044182,
-      "ask_usd": 15701925.8644166,
+      "bid_usd": 20480610.8555554,
+      "ask_usd": 29457149.9787687,
       "full": false
      }
     }
    },
    "OKX": {
-    "mid": 59829.55,
-    "spread_bps": 0.01671414877740929,
+    "mid": 59341.149999999994,
+    "spread_bps": 0.016851712512909643,
     "bands": {
      "0.5": {
-      "bid_usd": 5091293.658124455,
-      "ask_usd": 3954784.662092614,
+      "bid_usd": 3797313.237792871,
+      "ask_usd": 3499463.237817955,
       "full": false
      },
      "1": {
-      "bid_usd": 5091293.658124455,
-      "ask_usd": 3954784.662092614,
+      "bid_usd": 3797313.237792871,
+      "ask_usd": 3499463.237817955,
       "full": false
      },
      "2": {
-      "bid_usd": 5091293.658124455,
-      "ask_usd": 3954784.662092614,
+      "bid_usd": 3797313.237792871,
+      "ask_usd": 3499463.237817955,
       "full": false
      },
      "5": {
-      "bid_usd": 5091293.658124455,
-      "ask_usd": 3954784.662092614,
+      "bid_usd": 3797313.237792871,
+      "ask_usd": 3499463.237817955,
       "full": false
      }
     }
    },
    "Gemini": {
-    "mid": 59776.805,
-    "spread_bps": 0.001672889675980727,
+    "mid": 59303.285,
+    "spread_bps": 0.001686247229312384,
     "bands": {
      "0.5": {
-      "bid_usd": 3582416.7080577817,
-      "ask_usd": 4107974.685573736,
+      "bid_usd": 3417191.772656618,
+      "ask_usd": 1508373.9082659027,
       "full": true
      },
      "1": {
-      "bid_usd": 3730442.4634475126,
-      "ask_usd": 4621324.90114198,
+      "bid_usd": 3524265.9322628756,
+      "ask_usd": 1700826.4374611855,
       "full": true
      },
      "2": {
-      "bid_usd": 4057553.5682903174,
-      "ask_usd": 4664448.838684532,
+      "bid_usd": 3754436.5065781903,
+      "ask_usd": 2159966.8691091854,
       "full": true
      },
      "5": {
-      "bid_usd": 4383888.949177079,
-      "ask_usd": 4696646.998646114,
+      "bid_usd": 4421357.670025727,
+      "ask_usd": 3503485.925380253,
       "full": true
      }
     }
@@ -2035,31 +2035,31 @@
   },
   "aggregate": {
    "0.5": {
-    "bid_usd": 45832631.56584366,
-    "ask_usd": 47119760.268574156,
-    "imbalance": -0.013847182168516393
+    "bid_usd": 40658626.18670102,
+    "ask_usd": 40595001.34205773,
+    "imbalance": 0.0007830400509906535
    },
    "1": {
-    "bid_usd": 55807161.39873026,
-    "ask_usd": 61097190.653991796,
-    "imbalance": -0.045250918057146504
+    "bid_usd": 57235838.80835284,
+    "ask_usd": 50850909.55034103,
+    "imbalance": 0.059072266998198064
    },
    "2": {
-    "bid_usd": 71019925.4575078,
-    "ask_usd": 64901269.27665919,
-    "imbalance": 0.045016203637816804
+    "bid_usd": 73140314.18679532,
+    "ask_usd": 62378237.85301577,
+    "imbalance": 0.07941404458496568
    },
    "5": {
-    "bid_usd": 84726825.74972719,
-    "ask_usd": 85105658.72623385,
-    "imbalance": -0.002230627301223326
+    "bid_usd": 87680763.36631668,
+    "ask_usd": 85666903.66832086,
+    "imbalance": 0.011617460635298954
    }
   },
   "bid_walls": [
    {
-    "price": 59625.0,
-    "usd": 35631832.329012536,
-    "btc": 597.3018595099952,
+    "price": 59125.0,
+    "usd": 28767185.449525192,
+    "btc": 486.339897299997,
     "exchanges": [
      "Binance",
      "Bitstamp",
@@ -2068,50 +2068,12 @@
      "Kraken",
      "OKX"
     ],
-    "dist_pct": -0.25395301739529197
-   },
-   {
-    "price": 59375.0,
-    "usd": 11970114.868372943,
-    "btc": 201.5423477300013,
-    "exchanges": [
-     "Binance",
-     "Bitstamp",
-     "Coinbase",
-     "Gemini",
-     "Kraken"
-    ],
-    "dist_pct": -0.6721754366095678
-   },
-   {
-    "price": 59875.0,
-    "usd": 7479706.019974231,
-    "btc": 125.10439442000015,
-    "exchanges": [
-     "Binance",
-     "Bitstamp",
-     "Gemini",
-     "Kraken",
-     "OKX"
-    ],
-    "dist_pct": 0.16426940181897276
+    "dist_pct": -0.30063258721672037
    },
    {
     "price": 58875.0,
-    "usd": 6545659.268930613,
-    "btc": 111.22181108000046,
-    "exchanges": [
-     "Binance",
-     "Bitstamp",
-     "Coinbase",
-     "Gemini"
-    ],
-    "dist_pct": -1.5086202750381195
-   },
-   {
-    "price": 59125.0,
-    "usd": 6259916.14112432,
-    "btc": 105.96565349000048,
+    "usd": 14713012.192920648,
+    "btc": 249.9138788900011,
     "exchanges": [
      "Binance",
      "Bitstamp",
@@ -2119,48 +2081,88 @@
      "Gemini",
      "Kraken"
     ],
-    "dist_pct": -1.0903978558238436
+    "dist_pct": -0.7221943944589304
+   },
+   {
+    "price": 59375.0,
+    "usd": 12671172.491688078,
+    "btc": 213.73157354000017,
+    "exchanges": [
+     "Binance",
+     "Bitstamp",
+     "Coinbase",
+     "Gemini",
+     "Kraken",
+     "OKX"
+    ],
+    "dist_pct": 0.12092922002548967
    },
    {
     "price": 58625.0,
-    "usd": 6152373.532963378,
-    "btc": 105.00229960000024,
+    "usd": 9629947.403814435,
+    "btc": 164.3445548800006,
+    "exchanges": [
+     "Binance",
+     "Bitstamp",
+     "Coinbase",
+     "Gemini",
+     "Kraken"
+    ],
+    "dist_pct": -1.1437562017011405
+   },
+   {
+    "price": 58375.0,
+    "usd": 5430719.250268114,
+    "btc": 93.05054318000043,
+    "exchanges": [
+     "Binance",
+     "Bitstamp",
+     "Coinbase",
+     "Gemini",
+     "Kraken"
+    ],
+    "dist_pct": -1.5653180089433505
+   },
+   {
+    "price": 56125.0,
+    "usd": 4934550.519943276,
+    "btc": 88.05519978999999,
+    "exchanges": [
+     "Bitstamp",
+     "Coinbase",
+     "Gemini"
+    ],
+    "dist_pct": -5.359374274123274
+   },
+   {
+    "price": 58125.0,
+    "usd": 4363223.072405206,
+    "btc": 75.1039319700002,
     "exchanges": [
      "Binance",
      "Bitstamp",
      "Coinbase",
      "Gemini"
     ],
-    "dist_pct": -1.9268426942523953
+    "dist_pct": -1.9868798161855716
    },
    {
-    "price": 57125.0,
-    "usd": 4149766.684203078,
-    "btc": 72.76781113,
+    "price": 56625.0,
+    "usd": 4165320.5440154853,
+    "btc": 73.69190645999994,
     "exchanges": [
      "Bitstamp",
      "Coinbase",
      "Gemini"
     ],
-    "dist_pct": -4.43617720953805
-   },
-   {
-    "price": 58125.0,
-    "usd": 2302610.9736714507,
-    "btc": 39.68041209,
-    "exchanges": [
-     "Bitstamp",
-     "Coinbase",
-     "Gemini"
-    ],
-    "dist_pct": -2.763287532680947
+    "dist_pct": -4.5162506596388425
    }
   ],
   "ask_walls": [
    {
-    "price": 59875.0,
-    "usd": 40782091.39849259,
-    "btc": 681.2476758600011,
+    "price": 59375.0,
+    "usd": 33586968.112307645,
+    "btc": 565.60566862,
     "exchanges": [
      "Binance",
      "Bitstamp",
@@ -2169,12 +2171,12 @@
      "Kraken",
      "OKX"
     ],
-    "dist_pct": 0.16426940181897276
+    "dist_pct": 0.12092922002548967
    },
    {
-    "price": 60125.0,
-    "usd": 17790499.655609388,
-    "btc": 296.0249021499974,
+    "price": 60625.0,
+    "usd": 16527009.632657643,
+    "btc": 273.03699321999824,
     "exchanges": [
      "Binance",
      "Bitstamp",
@@ -2182,58 +2184,48 @@
      "Gemini",
      "Kraken"
     ],
-    "dist_pct": 0.5824918210332486
+    "dist_pct": 2.228738256236551
    },
    {
-    "price": 63125.0,
-    "usd": 8694960.061244015,
-    "btc": 137.99603255000008,
+    "price": 59625.0,
+    "usd": 15985756.662931722,
+    "btc": 268.21798555999953,
     "exchanges": [
+     "Binance",
      "Bitstamp",
      "Coinbase",
-     "Gemini"
+     "Gemini",
+     "Kraken",
+     "OKX"
     ],
-    "dist_pct": 5.601160851604559
+    "dist_pct": 0.5424910272677108
    },
    {
     "price": 62625.0,
-    "usd": 6610722.163276558,
-    "btc": 105.61552238999998,
+    "usd": 9060851.184373688,
+    "btc": 144.72713191000003,
     "exchanges": [
      "Bitstamp",
      "Coinbase",
      "Gemini"
     ],
-    "dist_pct": 4.764716013176007
+    "dist_pct": 5.6012327141742535
    },
    {
     "price": 62375.0,
-    "usd": 4431453.626361391,
-    "btc": 71.0751232,
+    "usd": 6145609.2099753935,
+    "btc": 98.56524454000001,
     "exchanges": [
      "Bitstamp",
      "Coinbase",
-     "Gemini",
-     "Kraken"
+     "Gemini"
     ],
-    "dist_pct": 4.346493593961731
-   },
-   {
-    "price": 62125.0,
-    "usd": 3439089.1339705996,
-    "btc": 55.35058397999999,
-    "exchanges": [
-     "Bitstamp",
-     "Coinbase",
-     "Gemini",
-     "Kraken"
-    ],
-    "dist_pct": 3.9282711747474552
+    "dist_pct": 5.179670906932055
    },
    {
     "price": 60375.0,
-    "usd": 3184545.7759809103,
-    "btc": 52.77770972000014,
+    "usd": 5680447.685536197,
+    "btc": 94.03527083000031,
     "exchanges": [
      "Binance",
      "Bitstamp",
@@ -2241,12 +2233,12 @@
      "Gemini",
      "Kraken"
     ],
-    "dist_pct": 1.0007142402475244
+    "dist_pct": 1.807176448994352
    },
    {
-    "price": 60875.0,
-    "usd": 2970854.0381730576,
-    "btc": 48.75276311000011,
+    "price": 59875.0,
+    "usd": 3745148.2611746807,
+    "btc": 62.52640555000054,
     "exchanges": [
      "Binance",
      "Bitstamp",
@@ -2254,169 +2246,182 @@
      "Gemini",
      "Kraken"
     ],
-    "dist_pct": 1.837159078676076
+    "dist_pct": 0.9640528345099098
+   },
+   {
+    "price": 60125.0,
+    "usd": 3404565.997443852,
+    "btc": 56.65348853000041,
+    "exchanges": [
+     "Binance",
+     "Bitstamp",
+     "Coinbase",
+     "Gemini",
+     "Kraken"
+    ],
+    "dist_pct": 1.385614641752131
    }
   ],
   "large_orders": [
    {
-    "exchange": "Coinbase",
+    "exchange": "Binance",
     "side": "ask",
-    "price": 63000.0,
-    "btc": 123.7193148,
-    "usd": 7794316.832400001,
-    "dist_pct": 5.392049641997421
+    "price": 60507.0,
+    "btc": 202.63105,
+    "usd": 12260596.94235,
+    "dist_pct": 2.02976108321824
    },
    {
     "exchange": "Coinbase",
     "side": "bid",
-    "price": 59382.19,
-    "btc": 71.446033,
-    "usd": 4242621.90635227,
-    "dist_pct": -0.6601473598329632
+    "price": 58913.0,
+    "btc": 62.495263,
+    "usd": 3681783.429119,
+    "dist_pct": -0.6581169997581182
    },
    {
     "exchange": "Coinbase",
     "side": "ask",
-    "price": 60130.32,
-    "btc": 63.289752,
-    "usd": 3805633.04048064,
-    "dist_pct": 0.5913915941141434
+    "price": 59643.71,
+    "btc": 60.997436,
+    "usd": 3638113.38352756,
+    "dist_pct": 0.5740407129217084
+   },
+   {
+    "exchange": "Coinbase",
+    "side": "bid",
+    "price": 56000.0,
+    "btc": 50.98017115,
+    "usd": 2854889.5844,
+    "dist_pct": -5.570155177744374
+   },
+   {
+    "exchange": "Binance",
+    "side": "ask",
+    "price": 60408.0,
+    "btc": 41.02753,
+    "usd": 2478391.03224,
+    "dist_pct": 1.8628226075503074
+   },
+   {
+    "exchange": "Coinbase",
+    "side": "bid",
+    "price": 56501.0,
+    "btc": 42.05526228,
+    "usd": 2376164.37408228,
+    "dist_pct": -4.725345316030982
    },
    {
     "exchange": "Coinbase",
     "side": "bid",
     "price": 57000.0,
-    "btc": 49.21275611,
-    "usd": 2805127.09827,
-    "dist_pct": -4.645288419145189
+    "btc": 36.29509001,
+    "usd": 2068820.13057,
+    "dist_pct": -3.8839079487755224
+   },
+   {
+    "exchange": "Kraken",
+    "side": "bid",
+    "price": 59157.3,
+    "btc": 33.809,
+    "usd": 2000049.1557,
+    "dist_pct": -0.24616680172101502
    },
    {
     "exchange": "Kraken",
     "side": "ask",
-    "price": 59887.8,
-    "btc": 39.241,
-    "usd": 2350057.1598,
-    "dist_pct": 0.18568238968275086
+    "price": 59410.2,
+    "btc": 33.665,
+    "usd": 2000044.383,
+    "dist_pct": 0.180285122485202
+   },
+   {
+    "exchange": "Coinbase",
+    "side": "bid",
+    "price": 58913.01,
+    "btc": 33.94835877,
+    "usd": 1999999.9997005977,
+    "dist_pct": -0.658100137285822
+   },
+   {
+    "exchange": "Coinbase",
+    "side": "ask",
+    "price": 59643.7,
+    "btc": 33.53246025,
+    "usd": 1999999.999412925,
+    "dist_pct": 0.5740238504494233
    },
    {
     "exchange": "Coinbase",
     "side": "ask",
     "price": 62500.0,
-    "btc": 33.60389157,
-    "usd": 2100243.223125,
-    "dist_pct": 4.555604803568869
-   },
-   {
-    "exchange": "Kraken",
-    "side": "bid",
-    "price": 59622.4,
-    "btc": 33.545,
-    "usd": 2000033.408,
-    "dist_pct": -0.2583025305551212
-   },
-   {
-    "exchange": "Coinbase",
-    "side": "ask",
-    "price": 60130.31,
-    "btc": 33.26109577,
-    "usd": 1999999.9995897885,
-    "dist_pct": 0.5913748652173645
-   },
-   {
-    "exchange": "Coinbase",
-    "side": "bid",
-    "price": 59382.2,
-    "btc": 33.68012636,
-    "usd": 1999999.999534792,
-    "dist_pct": -0.6601306309362065
-   },
-   {
-    "exchange": "Coinbase",
-    "side": "ask",
-    "price": 62300.0,
-    "btc": 30.33678244,
-    "usd": 1889981.546012,
-    "dist_pct": 4.221026868197453
-   },
-   {
-    "exchange": "Bitstamp",
-    "side": "ask",
-    "price": 60153.61,
-    "btc": 29.395074,
-    "usd": 1768219.81731714,
-    "dist_pct": 0.630353194688138
-   },
-   {
-    "exchange": "Kraken",
-    "side": "ask",
-    "price": 60295.3,
-    "btc": 28.01,
-    "usd": 1688871.3530000001,
-    "dist_pct": 0.8673849330020245
-   },
-   {
-    "exchange": "Coinbase",
-    "side": "ask",
-    "price": 62400.0,
-    "btc": 26.64525826,
-    "usd": 1662664.115424,
-    "dist_pct": 4.388315835883172
-   },
-   {
-    "exchange": "Coinbase",
-    "side": "ask",
-    "price": 62200.0,
-    "btc": 26.27333075,
-    "usd": 1634201.17265,
-    "dist_pct": 4.053737900511756
-   },
-   {
-    "exchange": "Coinbase",
-    "side": "ask",
-    "price": 62700.0,
-    "btc": 25.64920422,
-    "usd": 1608205.1045940001,
-    "dist_pct": 4.890182738940285
-   },
-   {
-    "exchange": "Coinbase",
-    "side": "ask",
-    "price": 62600.0,
-    "btc": 25.34867698,
-    "usd": 1586827.178948,
-    "dist_pct": 4.722893771254588
-   },
-   {
-    "exchange": "Coinbase",
-    "side": "bid",
-    "price": 58000.0,
-    "btc": 26.66767323,
-    "usd": 1546725.0473399998,
-    "dist_pct": -2.972398742288085
+    "btc": 29.93618631,
+    "usd": 1871011.644375,
+    "dist_pct": 5.390451810553154
    },
    {
     "exchange": "Binance",
     "side": "bid",
     "price": 58500.0,
-    "btc": 25.34781,
-    "usd": 1482846.885,
-    "dist_pct": -2.135953903859533
+    "btc": 31.94559,
+    "usd": 1868817.015,
+    "dist_pct": -1.354537105322251
+   },
+   {
+    "exchange": "Coinbase",
+    "side": "ask",
+    "price": 62200.0,
+    "btc": 26.07397231,
+    "usd": 1621801.077682,
+    "dist_pct": 4.8845776418624975
+   },
+   {
+    "exchange": "Coinbase",
+    "side": "ask",
+    "price": 62300.0,
+    "btc": 25.63112027,
+    "usd": 1596818.792821,
+    "dist_pct": 5.05320236475939
+   },
+   {
+    "exchange": "Coinbase",
+    "side": "ask",
+    "price": 62400.0,
+    "btc": 25.45867422,
+    "usd": 1588621.271328,
+    "dist_pct": 5.221827087656261
+   },
+   {
+    "exchange": "Coinbase",
+    "side": "ask",
+    "price": 62600.0,
+    "btc": 25.31713989,
+    "usd": 1584852.957114,
+    "dist_pct": 5.559076533450047
+   },
+   {
+    "exchange": "Coinbase",
+    "side": "bid",
+    "price": 58000.0,
+    "btc": 27.19181261,
+    "usd": 1577125.13138,
+    "dist_pct": -2.197660719806671
+   },
+   {
+    "exchange": "Coinbase",
+    "side": "ask",
+    "price": 62700.0,
+    "btc": 24.64749885,
+    "usd": 1545398.1778950002,
+    "dist_pct": 5.727701256346918
    },
    {
     "exchange": "Kraken",
     "side": "ask",
-    "price": 60999.9,
+    "price": 60630.4,
     "btc": 24.0,
-    "usd": 1463997.6,
-    "dist_pct": 2.0461029993155355
-   },
-   {
-    "exchange": "Binance",
-    "side": "bid",
-    "price": 58888.0,
-    "btc": 23.60241,
-    "usd": 1389898.7200799999,
-    "dist_pct": -1.4868727092389733
+    "usd": 1455129.6,
+    "dist_pct": 2.237843991273003
    }
   ],
   "venue_status": {
@@ -2430,15 +2435,15 @@
   "bucket_usd": 250
  },
  "flow": {
-  "taker_buy_btc_24h": 10321.47599,
-  "taker_sell_btc_24h": 10296.037909999997,
+  "taker_buy_btc_24h": 4516.36133,
+  "taker_sell_btc_24h": 4740.073350000001,
   "taker_source": "Binance spot, last 24h",
   "venue_status": {
-   "Coinbase": "ok (1000 trades / 2 min)",
-   "Kraken": "ok (1000 trades / 14 min)",
-   "Binance": "ok (1000 trades / 5 min)"
+   "Coinbase": "ok (1000 trades / 3 min)",
+   "Kraken": "ok (1000 trades / 15 min)",
+   "Binance": "ok (1000 trades / 9 min)"
   },
-  "taker_imbalance": 0.0012338092809532938,
+  "taker_imbalance": -0.024168270801215315,
   "large_trades": [],
   "large_buy_usd": 0,
   "large_sell_usd": 0,
@@ -2448,44 +2453,44 @@
   "funding": [
    {
     "venue": "Hyperliquid",
-    "rate_8h": 3.57464e-05,
-    "annualized": 0.039142308
+    "rate_8h": -1.85248e-05,
+    "annualized": -0.020284655999999998
    },
    {
     "venue": "Deribit",
-    "rate_8h": -4.09e-06,
-    "annualized": -0.0044785499999999995
+    "rate_8h": -2.8e-07,
+    "annualized": -0.0003066
    },
    {
     "venue": "OKX",
-    "rate_8h": 1.25458110025e-05,
-    "annualized": 0.0137376630477375
+    "rate_8h": 6.19629761927e-05,
+    "annualized": 0.0678494589310065
    }
   ],
-  "funding_avg_8h": 1.9893172823325608e-05,
-  "funding_avg_annualized": 0.021783024241541542,
+  "funding_avg_8h": 1.6274110485999073e-05,
+  "funding_avg_annualized": 0.017820150982168985,
   "open_interest": [
    {
     "venue": "Hyperliquid",
-    "btc": 35597.85984,
-    "usd": 2128324844.1139197
+    "btc": 36088.19344,
+    "usd": 2140318576.5395203
    },
    {
     "venue": "Deribit",
-    "usd": 813770730.0,
-    "btc": 13618.000672389959
+    "usd": 808448960.0,
+    "btc": 13637.506201366401
    },
    {
     "venue": "OKX",
-    "btc": 32371.867100000163,
-    "usd": 1935934768.1813097
+    "btc": 32429.887800000128,
+    "usd": 1923092346.5400076
    }
   ],
-  "oi_total_usd": 4878030342.295229,
+  "oi_total_usd": 4871859883.079528,
   "oi_change_24h_pct": null,
-  "long_short_ratio": 2.99,
+  "long_short_ratio": 3.12,
   "long_short_source": "OKX accounts (1D)",
-  "put_call_oi": 0.8039191038486991,
+  "put_call_oi": 0.8098223724675495,
   "venue_status": {
    "Hyperliquid": "ok",
    "Deribit": "ok",
@@ -2502,20 +2507,16 @@
    "economyFee": 1,
    "minimumFee": 1
   },
-  "mempool_tx": 65783,
-  "mempool_vsize_mb": 29.715683,
-  "block_height": 977855,
-  "difficulty_change_pct": -5.801140342514222,
-  "retarget_progress_pct": 4.712301587301587,
-  "remaining_blocks": 1921,
+  "mempool_tx": 67917,
+  "mempool_vsize_mb": 30.049289,
+  "block_height": 977981,
+  "difficulty_change_pct": -6.007860724219071,
+  "retarget_progress_pct": 10.962301587301587,
+  "remaining_blocks": 1795,
   "next_retarget": "2026-12-12",
-  "hashrate_eh": 1018.8929797490621,
-  "hashrate_change_30d_pct": -17.778829163456077,
+  "hashrate_eh": 1016.6975652624759,
+  "hashrate_change_30d_pct": -3.959733479664551,
   "hashrate_history": [
-   {
-    "date": "2026-08-28",
-    "eh": 894.733549896998
-   },
    {
     "date": "2026-08-29",
     "eh": 829.9369244016556
@@ -2879,17 +2880,17 @@
    {
     "date": "2026-11-27",
     "eh": 908.8088570729573
+   },
+   {
+    "date": "2026-11-28",
+    "eh": 970.867268866798
    }
   ]
  },
  "fear_greed": {
-  "value": 12,
+  "value": 10,
   "label": "Extreme Fear",
   "history": [
-   {
-    "date": "2026-07-31",
-    "value": 25
-   },
    {
     "date": "2026-08-01",
     "value": 27
@@ -3365,16 +3366,16 @@
    {
     "date": "2026-11-27",
     "value": 12
+   },
+   {
+    "date": "2026-11-28",
+    "value": 10
    }
   ],
-  "avg_7d": 11.571428571428571
+  "avg_7d": 11.285714285714286
  },
  "attention": {
   "history": [
-   {
-    "date": "2026-08-28",
-    "views": 5191
-   },
    {
     "date": "2026-08-29",
     "views": 2554
@@ -3734,12 +3735,16 @@
    {
     "date": "2026-11-26",
     "views": 2406
+   },
+   {
+    "date": "2026-11-27",
+    "views": 2680
    }
   ],
-  "latest": 2406,
-  "avg_7d": 3317.285714285714,
-  "avg_90d": 3496.703296703297,
-  "ratio_7d_vs_90d": 0.9486895034569452
+  "latest": 2680,
+  "avg_7d": 3151.8571428571427,
+  "avg_90d": 3469.1098901098903,
+  "ratio_7d_vs_90d": 0.9085492367488255
  },
  "macro": {
   "assets": [
@@ -3760,16 +3765,16 @@
    {
     "name": "US Dollar (DXY)",
     "symbol": "DX-Y.NYB",
-    "price": 104.04499816894531,
-    "change_1d_pct": 0.36172470977464677,
-    "change_5d_pct": 0.1395540336255774
+    "price": 104.01000213623047,
+    "change_1d_pct": 0.327967563702547,
+    "change_5d_pct": 0.10587161572290782
    },
    {
     "name": "Gold",
     "symbol": "GC=F",
-    "price": 3668.5,
-    "change_1d_pct": 3.7530388975433038,
-    "change_5d_pct": -0.46126712793379543
+    "price": 3639.60009765625,
+    "change_1d_pct": 2.9356877480254395,
+    "change_5d_pct": -1.2454185956790154
    },
    {
     "name": "US 10y yield",
@@ -3784,7 +3789,7 @@
     "price": 33.86000061035156,
     "change_1d_pct": -0.6163753635270997,
     "change_5d_pct": -3.4777684065658065,
-    "volume_vs_20d": 0.7754620346348201
+    "volume_vs_20d": 0.779918352780364
    },
    {
     "name": "MSTR (Strategy)",
@@ -3851,22 +3856,22 @@
    },
    {
     "date": "2026-11-27",
-    "net_musd": 0.0
+    "net_musd": -389.0
    }
   ],
   "latest": {
    "date": "2026-11-27",
-   "net_musd": 0.0
+   "net_musd": -389.0
   },
-  "sum_5d_musd": -1923.3000000000002,
-  "sum_20d_musd": -4109.400000000001
+  "sum_5d_musd": -2312.3,
+  "sum_20d_musd": -4498.400000000001
  },
- "stocktwits_ratio": 0.46153846153846156,
+ "stocktwits_ratio": 0.42105263157894735,
  "reddit_mode": null,
  "status": {
   "Prices & history": {
    "ok": true,
-   "secs": 2.4,
+   "secs": 2.5,
    "detail": null
   },
   "Order books / walls": {
@@ -3883,16 +3888,16 @@
   },
   "Taker flow & whale trades": {
    "ok": true,
-   "secs": 1.4,
+   "secs": 1.3,
    "detail": {
-    "Coinbase": "ok (1000 trades / 2 min)",
-    "Kraken": "ok (1000 trades / 14 min)",
-    "Binance": "ok (1000 trades / 5 min)"
+    "Coinbase": "ok (1000 trades / 3 min)",
+    "Kraken": "ok (1000 trades / 15 min)",
+    "Binance": "ok (1000 trades / 9 min)"
    }
   },
   "Derivatives (funding/OI/options)": {
    "ok": true,
-   "secs": 4.4,
+   "secs": 4.3,
    "detail": {
     "Hyperliquid": "ok",
     "Deribit": "ok",
@@ -3908,22 +3913,22 @@
   },
   "Fear & Greed index": {
    "ok": true,
-   "secs": 0.1,
+   "secs": 0.2,
    "detail": null
   },
   "Wikipedia attention": {
    "ok": true,
-   "secs": 0.3,
+   "secs": 0.2,
    "detail": null
   },
   "Macro (Yahoo Finance)": {
    "ok": true,
-   "secs": 1.2,
+   "secs": 1.8,
    "detail": null
   },
   "Spot-ETF flows (Farside)": {
    "ok": true,
-   "secs": 1.2,
+   "secs": 1.3,
    "detail": null
   },
   "Reddit": {
@@ -3938,99 +3943,99 @@
   },
   "StockTwits": {
    "ok": true,
-   "secs": 0.1,
+   "secs": 0.2,
    "detail": null
   },
   "News RSS": {
    "ok": true,
-   "secs": 0.8,
+   "secs": 1.6,
    "detail": {
-    "CoinDesk": "ok (9)",
-    "Cointelegraph": "ok (5)",
-    "Decrypt": "ok (5)",
-    "Bitcoin Magazine": "ok (9)",
-    "The Block": "ok (4)",
+    "CoinDesk": "ok (7)",
+    "Cointelegraph": "ok (3)",
+    "Decrypt": "ok (3)",
+    "Bitcoin Magazine": "ok (7)",
+    "The Block": "ok (3)",
     "CryptoSlate": "ok (5)",
-    "Google News": "ok (96)"
+    "Google News": "ok (97)"
    }
   }
  },
  "signal": {
-  "score": -24.3,
+  "score": -25.5,
   "label": "Bearish lean",
-  "confidence": "Medium",
-  "agreement_pct": 60,
+  "confidence": "Low",
+  "agreement_pct": 55,
   "components": {
    "trend": {
-    "score": -0.825,
-    "why": "Price is -19.9% vs 50-day and -16.9% vs 200-day average",
+    "score": -0.834,
+    "why": "Price is -20.1% vs 50-day and -17.4% vs 200-day average",
     "raw": null,
     "weight": 1.5
    },
    "momentum": {
-    "score": -0.903,
-    "why": "30-day return -26.0%, MACD histogram negative",
+    "score": -0.912,
+    "why": "30-day return -27.0%, MACD histogram negative",
     "raw": null,
     "weight": 1.0
    },
    "mean_reversion": {
-    "score": 0.178,
+    "score": 0.202,
     "why": "RSI(14) 26 \u2014 oversold",
-    "raw": 26.449985597492443,
+    "raw": 25.950450813057415,
     "weight": 0.75
    },
    "social_sentiment": {
-    "score": -0.615,
-    "why": "Forum mood -0.11 (-0.20 vs 7-day avg)",
-    "raw": -0.10816634987862196,
+    "score": -0.694,
+    "why": "Forum mood -0.16 (-0.23 vs 7-day avg)",
+    "raw": -0.15598814559519972,
     "weight": 1.0
    },
    "news_sentiment": {
-    "score": -0.466,
-    "why": "Headline tone -0.13 across 133 stories",
-    "raw": -0.12633082706766918,
+    "score": -0.517,
+    "why": "Headline tone -0.14 across 125 stories",
+    "raw": -0.1431944,
     "weight": 0.75
    },
    "fear_greed_contrarian": {
-    "score": 0.95,
-    "why": "Fear & Greed 12 (Extreme Fear) \u2014 read contrarian",
-    "raw": 12,
+    "score": 1.0,
+    "why": "Fear & Greed 10 (Extreme Fear) \u2014 read contrarian",
+    "raw": 10,
     "weight": 1.0
    },
    "funding_contrarian": {
-    "score": 0.479,
-    "why": "Perp funding +2.2%/yr (neutral \u2248 10%) \u2014 hot funding = crowded longs",
-    "raw": 0.021783024241541542,
+    "score": 0.499,
+    "why": "Perp funding +1.8%/yr (neutral \u2248 10%) \u2014 hot funding = crowded longs",
+    "raw": 0.017820150982168985,
     "weight": 1.0
    },
    "long_short_contrarian": {
-    "score": -0.991,
-    "why": "Long/short account ratio 2.99 (OKX accounts (1D))",
-    "raw": 2.99,
+    "score": -0.994,
+    "why": "Long/short account ratio 3.12 (OKX accounts (1D))",
+    "raw": 3.12,
     "weight": 0.5
    },
    "options_put_call": {
-    "score": 0.545,
-    "why": "Deribit put/call OI 0.80 \u2014 heavy put hedging is read contrarian",
-    "raw": 0.8039191038486991,
+    "score": 0.558,
+    "why": "Deribit put/call OI 0.81 \u2014 heavy put hedging is read contrarian",
+    "raw": 0.8098223724675495,
     "weight": 0.5
    },
    "orderbook_imbalance": {
-    "score": 0.09,
-    "why": "Resting bids vs asks within \u00b12%: +5% imbalance",
-    "raw": 0.045016203637816804,
+    "score": 0.159,
+    "why": "Resting bids vs asks within \u00b12%: +8% imbalance",
+    "raw": 0.07941404458496568,
     "weight": 0.75
    },
    "taker_flow": {
-    "score": 0.005,
-    "why": "Aggressive buys vs sells (Binance spot, last 24h): +0.1%",
-    "raw": 0.0012338092809532938,
+    "score": -0.097,
+    "why": "Aggressive buys vs sells (Binance spot, last 24h): -2.4%",
+    "raw": -0.024168270801215315,
     "weight": 0.75
    },
    "etf_flows": {
-    "score": -0.857,
-    "why": "US spot-ETF net flows, last 5 days: $-1,923M",
-    "raw": -1923.3000000000002,
+    "score": -0.912,
+    "why": "US spot-ETF net flows, last 5 days: $-2,312M",
+    "raw": -2312.3,
     "weight": 1.0
    }
   },
@@ -4038,9 +4043,9 @@
   "levels": {
    "support": [
     {
-     "price": 59625.0,
-     "usd": 35631832.329012536,
-     "btc": 597.3018595099952,
+     "price": 59125.0,
+     "usd": 28767185.449525192,
+     "btc": 486.339897299997,
      "exchanges": [
       "Binance",
       "Bitstamp",
@@ -4049,12 +4054,12 @@
       "Kraken",
       "OKX"
      ],
-     "dist_pct": -0.25395301739529197
+     "dist_pct": -0.30063258721672037
     },
     {
-     "price": 59375.0,
-     "usd": 11970114.868372943,
-     "btc": 201.5423477300013,
+     "price": 58875.0,
+     "usd": 14713012.192920648,
+     "btc": 249.9138788900011,
      "exchanges": [
       "Binance",
       "Bitstamp",
@@ -4062,26 +4067,27 @@
       "Gemini",
       "Kraken"
      ],
-     "dist_pct": -0.6721754366095678
+     "dist_pct": -0.7221943944589304
     },
     {
-     "price": 58875.0,
-     "usd": 6545659.268930613,
-     "btc": 111.22181108000046,
+     "price": 58625.0,
+     "usd": 9629947.403814435,
+     "btc": 164.3445548800006,
      "exchanges": [
       "Binance",
       "Bitstamp",
       "Coinbase",
-      "Gemini"
+      "Gemini",
+      "Kraken"
      ],
-     "dist_pct": -1.5086202750381195
+     "dist_pct": -1.1437562017011405
     }
    ],
    "resistance": [
     {
-     "price": 59875.0,
-     "usd": 40782091.39849259,
-     "btc": 681.2476758600011,
+     "price": 59375.0,
+     "usd": 33586968.112307645,
+     "btc": 565.60566862,
      "exchanges": [
       "Binance",
       "Bitstamp",
@@ -4090,12 +4096,12 @@
       "Kraken",
       "OKX"
      ],
-     "dist_pct": 0.16426940181897276
+     "dist_pct": 0.12092922002548967
     },
     {
-     "price": 60125.0,
-     "usd": 17790499.655609388,
-     "btc": 296.0249021499974,
+     "price": 60625.0,
+     "usd": 16527009.632657643,
+     "btc": 273.03699321999824,
      "exchanges": [
       "Binance",
       "Bitstamp",
@@ -4103,22 +4109,25 @@
       "Gemini",
       "Kraken"
      ],
-     "dist_pct": 0.5824918210332486
+     "dist_pct": 2.228738256236551
     },
     {
-     "price": 63125.0,
-     "usd": 8694960.061244015,
-     "btc": 137.99603255000008,
+     "price": 59625.0,
+     "usd": 15985756.662931722,
+     "btc": 268.21798555999953,
      "exchanges": [
+      "Binance",
       "Bitstamp",
       "Coinbase",
-      "Gemini"
+      "Gemini",
+      "Kraken",
+      "OKX"
      ],
-     "dist_pct": 5.601160851604559
+     "dist_pct": 0.5424910272677108
     }
    ]
   }
  },
- "brief": "### Bottom line\nComposite reading is -24 (Bearish lean, medium confidence; 60% of active inputs agree).\n### Supporting the bulls\n- Fear & Greed 12 (Extreme Fear) \u2014 read contrarian\n- Perp funding +2.2%/yr (neutral \u2248 10%) \u2014 hot funding = crowded longs\n- Deribit put/call OI 0.80 \u2014 heavy put hedging is read contrarian\n### Supporting the bears\n- Price is -19.9% vs 50-day and -16.9% vs 200-day average\n- 30-day return -26.0%, MACD histogram negative\n- US spot-ETF net flows, last 5 days: $-1,923M\n### What the crowd is talking about\n- Price targets / levels: 23 mentions, tone -0.29\n- ETFs / institutions: 14 mentions, tone -0.17\n- Whales / treasuries: 9 mentions, tone -0.07\n- Leverage / liquidations: 8 mentions, tone -0.50\n### Levels to watch (largest resting liquidity)\n- Bid wall \u2248 $59,625 ($35.6M)\n- Bid wall \u2248 $59,375 ($12.0M)\n- Ask wall \u2248 $59,875 ($40.8M)\n- Ask wall \u2248 $60,125 ($17.8M)\n_Add an ANTHROPIC_API_KEY to replace this rules-based note with an AI-written analyst brief._",
+ "brief": "### Bottom line\nComposite reading is -26 (Bearish lean, low confidence; 55% of active inputs agree).\n### Supporting the bulls\n- Fear & Greed 10 (Extreme Fear) \u2014 read contrarian\n- Perp funding +1.8%/yr (neutral \u2248 10%) \u2014 hot funding = crowded longs\n- Deribit put/call OI 0.81 \u2014 heavy put hedging is read contrarian\n### Supporting the bears\n- Price is -20.1% vs 50-day and -17.4% vs 200-day average\n- 30-day return -27.0%, MACD histogram negative\n- US spot-ETF net flows, last 5 days: $-2,312M\n### What the crowd is talking about\n- Price targets / levels: 22 mentions, tone -0.33\n- ETFs / institutions: 12 mentions, tone -0.41\n- Security / hacks: 7 mentions, tone -0.42\n- Whales / treasuries: 7 mentions, tone -0.25\n### Levels to watch (largest resting liquidity)\n- Bid wall \u2248 $59,125 ($28.8M)\n- Bid wall \u2248 $58,875 ($14.7M)\n- Ask wall \u2248 $59,375 ($33.6M)\n- Ask wall \u2248 $60,625 ($16.5M)\n_Add an ANTHROPIC_API_KEY to replace this rules-based note with an AI-written analyst brief._",
  "brief_source": "rules"
 }
